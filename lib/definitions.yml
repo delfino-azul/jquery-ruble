@@ -1,0 +1,4129 @@
+- title:       jQuery.holdReady()
+  version:     1.6
+  trigger:     holdReady
+  expansion:   \$.holdReady(${1:hold})
+  description: Holds or releases the execution of jQuery's ready event.
+  categories:
+    - jQuery Core
+
+- title:       jQuery( selector [, context] )
+  version:     1.0
+  trigger:     $
+  expansion:   \$(${1:selector}, ${2:[context]})
+  description: Accepts a string containing a CSS selector which is then used to match a set of elements.
+  group:
+    jQuery():
+    - jQuery( selector [ , context ]  )
+  categories:
+    - jQuery Core
+
+- title:       jQuery( element )
+  version:     1.0
+  trigger:     $
+  expansion:   \$(${1:element})
+  description: Accepts a string containing a CSS selector which is then used to match a set of elements.
+  group:
+    jQuery():
+    - jQuery( selector [ , context ]  )
+  categories:
+    - jQuery Core
+
+- title:       jQuery( object )
+  version:     1.0
+  trigger:     $
+  expansion:   \$(${1:object})
+  description: Accepts a string containing a CSS selector which is then used to match a set of elements.
+  group:
+    jQuery():
+    - jQuery( selector [ , context ]  )
+  categories:
+    - jQuery Core
+
+- title:       jQuery( elementArray )
+  version:     1.0
+  trigger:     $
+  expansion:   \$(${1:[elementArray]})
+  description: Accepts a string containing a CSS selector which is then used to match a set of elements.
+  group:
+    jQuery():
+    - jQuery( selector [ , context ]  )
+  categories:
+    - jQuery Core
+
+- title:       jQuery( jQuery object )
+  version:     1.0
+  trigger:     $
+  expansion:   \$(${1:jQuery object})
+  description: Accepts a string containing a CSS selector which is then used to match a set of elements.
+  group:
+    jQuery():
+    - jQuery( selector [ , context ]  )
+  categories:
+    - jQuery Core
+
+- title:       jQuery()
+  version:     1.4
+  trigger:     $
+  expansion:   \$()
+  description: Accepts a string containing a CSS selector which is then used to match a set of elements.
+  group:
+    jQuery():
+    - jQuery( selector [ , context ]  )
+  categories:
+    - jQuery Core
+
+- title:       jQuery( html [, ownerDocument] )
+  version:     1.0
+  trigger:     $
+  expansion:   \$(${1:html}, ${2:[ownerDocument]})
+  description: Creates DOM elements on the fly from the provided string of raw HTML.
+  group:
+    jQuery():
+    - jQuery( html [ , ownerDocument ]  )
+  categories:
+    - jQuery Core
+
+- title:       jQuery( html, props )
+  version:     1.4
+  trigger:     $
+  expansion:   \$(${1:html}, ${2:props})
+  description: Creates DOM elements on the fly from the provided string of raw HTML.
+  group:
+    jQuery():
+    - jQuery( html [ , ownerDocument ]  )
+  categories:
+    - jQuery Core
+
+- title:       jQuery( callback )
+  version:     1.0
+  trigger:     $
+  expansion:   jQuery(function(\$) {${0}});
+  description: Binds a function to be executed when the DOM has finished loading.
+  categories:
+    - jQuery Core
+
+- title:       jQuery.noConflict()
+  version:     1.0
+  trigger:     noConflict
+  expansion:   \$.noConflict(${1:removeAll});
+  description: Relinquish jQuery's control of the $ variable.
+  categories:
+    - jQuery Core
+    - Miscellaneous > Setup Methods
+
+- title:       jQuery.sub()
+  version:     1.5
+  trigger:     sub
+  expansion:   \$.sub();
+  description: Creates a new copy of jQuery whose properties and methods can be modified without affecting the original jQuery object.
+  categories:
+    - jQuery Core
+    - Deprecated
+
+- title:       jQuery.when()
+  version:     1.5
+  trigger:     when
+  expansion:   \$.when(${0})
+  description: Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events.
+  categories:
+    - jQuery Core
+    - Deferred Object
+
+- title:       All Selector ("*")
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   *
+  description: Selects all elements.
+  categories:
+    - Selectors > Basic
+
+- title:       ':animated Selector'
+  version:     1.2
+  key_binding: "M3+:"
+  expansion:   ':animated'
+  description: Select all elements that are in the progress of an animation at the time the selector is run.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > jQuery Extensions
+
+- title:       Attribute Contains Prefix Selector [name|="value"]
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   [${1:name}|="${2:value}"]
+  description: Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).
+  categories:
+    - Selectors > Attribute
+
+- title:       Attribute Contains Selector [name*="value"]
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   [${1:name}*="${2:value}"]
+  description: Selects elements that have the specified attribute with a value containing the a given substring.
+  categories:
+    - Selectors > Attribute
+
+- title:       Attribute Contains Word Selector [name~="value"]
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   [${1:name}~="${2:value}"]
+  description: Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.
+  categories:
+    - Selectors > Attribute
+
+- title:       Attribute Ends With Selector [name$="value"]
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   [${1:name}$="${2:value}"]
+  description: Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.
+  categories:
+    - Selectors > Attribute
+
+- title:       Attribute Equals Selector [name="value"]
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   [${1:name}="${2:value}"]
+  description: Selects elements that have the specified attribute with a value exactly equal to a certain value.
+  categories:
+    - Selectors > Attribute
+
+- title:       Attribute Not Equal Selector [name!="value"]
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   [${1:name}!="${2:value}"]
+  description: Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value.
+  categories:
+    - Selectors > Attribute
+    - Selectors > jQuery Extensions
+
+- title:       Attribute Starts With Selector [name^="value"]
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   [${1:name}^="${2:value}"]
+  description: Selects elements that have the specified attribute with a value beginning exactly with a given string.
+  categories:
+    - Selectors > Attribute
+
+- title:       ':button Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':button'
+  description: Selects all button elements and elements of type button.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':checkbox Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':checkbox'
+  description: Selects all elements of type checkbox.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':checked Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':checked'
+  description: Matches all elements that are checked.
+  categories:
+    - Selectors > Form
+
+- title:       Child Selector (“parent > child”)
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   ${1:parent} > ${2:child}
+  description: Selects all direct child elements specified by "child" of elements specified by "parent".
+  categories:
+    - Selectors > Hierarchy
+
+- title:       Class Selector (“.class”)
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   .${1:class}
+  description: Selects all elements with the given class.
+  categories:
+    - Selectors > Basic
+
+- title:       ':contains() Selector'
+  version:     1.1.4
+  key_binding: "M3+:"
+  expansion:   ':contains(${1:text})'
+  description: Select all elements that contain the specified text.
+  categories:
+    - Selectors > Content Filter
+
+- title:       Descendant Selector (“ancestor descendant”)
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   ${1:ancestor} ${2:descendant}
+  description: Selects all elements that are descendants of a given ancestor.
+  categories:
+    - Selectors > Hierarchy
+
+- title:       ':disabled Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':disabled'
+  description: Selects all elements that are disabled.
+  categories:
+    - Selectors > Form
+
+- title:       ':empty Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':empty'
+  description: Select all elements that have no children (including text nodes).
+  categories:
+    - Selectors > Content Filter
+
+- title:       ':enabled Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':enabled'
+  description: Selects all elements that are enabled.
+  categories:
+    - Selectors > Form
+
+- title:       ':eq() Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':eq(${1:index})'
+  description: Select the element at index n within the matched set.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > jQuery Extensions
+
+- title:       ':even Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':even'
+  description: Selects even elements, zero-indexed. See also odd.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > jQuery Extensions
+
+- title:       ':file Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':file'
+  description: Selects all elements of type file.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':first-child Selector'
+  version:     1.1.4
+  key_binding: "M3+:"
+  expansion:   ':first-child'
+  description: Selects all elements that are the first child of their parent.
+  categories:
+    - Selectors > Child Filter
+
+- title:       ':first Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':first'
+  description: Selects the first matched element.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > jQuery Extensions
+
+- title:       ':focus Selector'
+  version:     1.6
+  key_binding: "M3+:"
+  expansion:   ':focus'
+  description: Selects element if it is currently focused.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > Form
+
+- title:       ':gt() Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':gt(${1:index})'
+  description: Select all elements at an index greater than index within the matched set.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > jQuery Extensions
+
+- title:       Has Attribute Selector [name]
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   [${1:attribute}]
+  description: Selects elements that have the specified attribute, with any value.
+  categories:
+    - Selectors > Attribute
+
+- title:       ':has() Selector'
+  version:     1.1.4
+  key_binding: "M3+:"
+  expansion:   ':has(${1:selector})'
+  description: Selects elements which contain at least one element that matches the specified selector.
+  categories:
+    - Selectors > Content Filter
+    - Selectors > jQuery Extensions
+
+- title:       ':header Selector'
+  version:     1.2
+  key_binding: "M3+:"
+  expansion:   ':header'
+  description: Selects all elements that are headers, like h1, h2, h3 and so on.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > jQuery Extensions
+
+- title:       ':hidden Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':hidden'
+  description: Selects all elements that are hidden.
+  categories:
+    - Selectors > jQuery Extensions
+    - Selectors > Visibility Filter
+
+- title:       ID Selector (“#id”)
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   "#${1:id}"
+  description: Selects a single element with the given id attribute.
+  categories:
+    - Selectors > Basic
+
+- title:       ':image Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':image'
+  description: Selects all elements of type image.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':input Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':input'
+  description: Selects all input, textarea, select and button elements.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':last-child Selector'
+  version:     1.1.4
+  key_binding: "M3+:"
+  expansion:   ':last-child'
+  description: Selects all elements that are the last child of their parent.
+  categories:
+    - Selectors > Child Filter
+
+- title:       ':last Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':last'
+  description: Selects the last matched element.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > jQuery Extensions
+
+- title:       ':lt() Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':lt(${1:index})'
+  description: Select all elements at an index less than index within the matched set.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > jQuery Extensions
+
+- title:       Next Adjacent Selector (“prev + next”)
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   ${1:prev} + ${2:next}
+  description: Selects all next elements matching "next" that are immediately preceded by a sibling "prev".
+  categories:
+    - Selectors > Hierarchy
+
+- title:       Next Siblings Selector (“prev ~ siblings”)
+  version:     1.0
+  key_binding: M3+SPACE
+  expansion:   ${1:prev} - ${2:siblings}
+  description: Selects all sibling elements that follow after the "prev" element, have the same parent, and match the filtering "siblings" selector.
+  categories:
+    - Selectors > Hierarchy
+
+- title:       ':not() Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':not(${1:selector})'
+  description: Selects all elements that do not match the given selector.
+  categories:
+    - Selectors > Basic Filter
+
+- title:       ':nth-child() Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':nth-child(${1:index/even/odd/equation})'
+  description: Selects all elements that are the nth-child of their parent.
+  categories:
+    - Selectors > Child Filter
+
+- title:       ':odd Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':odd'
+  description: Selects odd elements, zero-indexed. See also even.
+  categories:
+    - Selectors > Basic Filter
+    - Selectors > jQuery Extensions
+
+- title:       ':only-child Selector'
+  version:     1.1.4
+  key_binding: "M3+:"
+  expansion:   ':only-child'
+  description: Selects all elements that are the only child of their parent.
+  categories:
+    - Selectors > Child Filter
+
+- title:       ':parent Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':parent'
+  description: Select all elements that are the parent of another element, including text nodes.
+  categories:
+    - Selectors > Content Filter
+    - Selectors > jQuery Extensions
+
+- title:       ':password Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':password'
+  description: Selects all elements of type password.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':radio Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':radio'
+  description: Selects all elements of type radio.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':reset Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':reset'
+  description: Selects all elements of type reset.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':selected Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':selected'
+  description: Selects all elements that are selected.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':submit Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':submit'
+  description: Selects all elements of type submit.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':text Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':text'
+  description: Selects all elements of type text.
+  categories:
+    - Selectors > Form
+    - Selectors > jQuery Extensions
+
+- title:       ':visible Selector'
+  version:     1.0
+  key_binding: "M3+:"
+  expansion:   ':visible'
+  description: Selects all elements that are visible.
+  categories:
+    - Selectors > jQuery Extensions
+    - Selectors > Visibility Filter
+
+- title:       addClass(className)
+  version:     1.0
+  trigger:     addClass
+  expansion:   addClass(${1:className})
+  description: Adds the specified class(es) to each of the set of matched elements.
+  group:
+    addClass():
+    - addClass( className )
+  categories:
+    - Attributes
+    - Manipulation > Class Attribute
+    - CSS
+
+- title:       addClass( function(index, currentClass) )
+  version:     1.4
+  trigger:     addClass
+  expansion:   addClass(function(index, currentClass){${0}})
+  description: Adds the specified class(es) to each of the set of matched elements.
+  group:
+    addClass():
+    - addClass( className )
+  categories:
+    - Attributes
+    - Manipulation > Class Attribute
+    - CSS
+
+- title:       attr( attributeName )
+  version:     1.0
+  trigger:     attr
+  expansion:   attr(${1:attributeName})
+  description: Get the value of an attribute for the first element in the set of matched elements.
+  group:
+    attr():
+    - attr( attributeName  )
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       attr( attributeName, value )
+  version:     1.0
+  trigger:     attr
+  expansion:   attr(${1:attributeName}, ${2:value})
+  description: Set one or more attributes for the set of matched elements.
+  group:
+    attr():
+    - attr( attributeName , value  )
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       attr( map )
+  version:     1.0
+  trigger:     attr
+  expansion:   attr(${1:map})
+  description: Set one or more attributes for the set of matched elements.
+  group:
+    attr():
+    - attr( attributeName , value  )
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       attr( attributeName, function(index, attr) )
+  version:     1.1
+  trigger:     attr
+  expansion:   attr(${1:attributeName}, function(index, attr){${0}})
+  description: Set one or more attributes for the set of matched elements.
+  group:
+    attr():
+    - attr( attributeName , value  )
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       hasClass( className )
+  version:     1.2
+  trigger:     hasClass
+  expansion:   hasClass(${1:className})
+  description: Determine whether any of the matched elements are assigned the given class.
+  categories:
+    - Attributes
+    - Manipulation > Class Attribute
+    - CSS
+
+- title:       html()
+  version:     1.0
+  trigger:     html
+  expansion:   html()
+  description: Get the HTML contents of the first element in the set of matched elements.
+  group:
+    html():
+    - html()
+  categories:
+    - Attributes
+    - Manipulation > DOM Insertion, Inside
+
+- title:       html( htmlString )
+  version:     1.0
+  trigger:     html
+  expansion:   html(${1:htmlString})
+  description: Set the HTML contents of each element in the set of matched elements.
+  group:
+    html():
+    - html( htmlString  )
+  categories:
+    - Attributes
+    - Manipulation > DOM Insertion, Inside
+
+- title:       html( function(index, oldhtml) )
+  version:     1.4
+  trigger:     html
+  expansion:   html(function(index, oldhtml){${0}})
+  description: Set the HTML contents of each element in the set of matched elements.
+  group:
+    html():
+    - html( htmlString  )
+  categories:
+    - Attributes
+    - Manipulation > DOM Insertion, Inside
+
+- title:       prop( propertyName )
+  version:     1.6
+  trigger:     prop
+  expansion:   prop(${1:propertyName})
+  description: Get the value of a property for the first element in the set of matched elements.
+  group:
+    prop():
+    - prop( propertyName  )
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       prop( propertyName, value )
+  version:     1.6
+  trigger:     prop
+  expansion:   prop(${1:propertyName}, ${2:value})
+  description: Set one or more properties for the set of matched elements.
+  group:
+    prop():
+    - prop( propertyName , value  )
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       prop( map )
+  version:     1.6
+  trigger:     prop
+  expansion:   prop(${1:map})
+  description: Set one or more properties for the set of matched elements.
+  group:
+    prop():
+    - prop( propertyName , value  )
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       prop( propertyName, function(index, oldPropertyValue) )
+  version:     1.6
+  trigger:     prop
+  expansion:   prop(${1:propertyName}, function(index, oldPropertyValue){${0}})
+  description: Set one or more properties for the set of matched elements.
+  group:
+    prop():
+    - prop( propertyName , value  )
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       removeAttr( attributeName )
+  version:     1.0
+  trigger:     removeAttr
+  expansion:   removeAttr(${1:attributeName})
+  description: Remove an attribute from each element in the set of matched elements.
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       removeClass( [className] )
+  version:     1.0
+  trigger:     removeClass
+  expansion:   removeClass(${1:[className]})
+  description: Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
+  group:
+    removeClass():
+    - removeClass( [className] )
+  categories:
+    - Attributes
+    - Manipulation > Class Attribute
+    - CSS
+
+- title:       removeClass( function(index, class) )
+  version:     1.4
+  trigger:     removeClass
+  expansion:   removeClass(function(index, clazz){${0}})
+  description: Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
+  group:
+    removeClass():
+    - removeClass( [className] )
+  categories:
+    - Attributes
+    - Manipulation > Class Attribute
+    - CSS
+
+- title:       removeProp( propertyName )
+  version:     1.6
+  trigger:     removeProp
+  expansion:   removeProp(${1:propertyName})
+  description: Remove a property for the set of matched elements.
+  categories:
+    - Attributes
+    - Manipulation > General Attributes
+
+- title:       toggleClass( className )
+  version:     1.0
+  trigger:     toggleClass
+  expansion:   toggleClass(${1:className})
+  description: Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
+  group:
+    toggleClass():
+    - toggleClass( className )
+  categories:
+    - Attributes
+    - Manipulation > Class Attribute
+    - CSS
+
+- title:       toggleClass( className, switch )
+  version:     1.3
+  trigger:     toggleClass
+  expansion:   toggleClass(${1:className}, ${2:switch})
+  description: Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
+  group:
+    toggleClass():
+    - toggleClass( className )
+  categories:
+    - Attributes
+    - Manipulation > Class Attribute
+    - CSS
+
+- title:       toggleClass( [switch] )
+  version:     1.4
+  trigger:     toggleClass
+  expansion:   toggleClass(${1:[switch]})
+  description: Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
+  group:
+    toggleClass():
+    - toggleClass( className )
+  categories:
+    - Attributes
+    - Manipulation > Class Attribute
+    - CSS
+
+- title:       toggleClass( function(index, class, switch) [, switch] )
+  version:     1.4
+  trigger:     toggleClass
+  expansion:   toggleClass(function(index, clazz, swtch){${0}}, ${1:switch})
+  description: Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
+  group:
+    toggleClass():
+    - toggleClass( className )
+  categories:
+    - Attributes
+    - Manipulation > Class Attribute
+    - CSS
+
+- title:       val()
+  version:     1.0
+  trigger:     val
+  expansion:   val()
+  description: Get the current value of the first element in the set of matched elements.
+  group:
+    val():
+    - val()
+  categories:
+    - Attributes
+    - Forms
+    - Manipulation > General Attributes
+
+- title:       val( value )
+  version:     1.0
+  trigger:     val
+  expansion:   val(${1:value})
+  description: Set the value of each element in the set of matched elements.
+  group:
+    val():
+    - val( value  )
+  categories:
+    - Attributes
+    - Forms
+    - Manipulation > General Attributes
+
+- title:       val( function(index, value) )
+  version:     1.4
+  trigger:     val
+  expansion:   val(function(index, value){${0}})
+  description: Set the value of each element in the set of matched elements.
+  group:
+    val():
+    - val( value  )
+  categories:
+    - Attributes
+    - Forms
+    - Manipulation > General Attributes
+
+- title:       add( selector )
+  version:     1.0
+  trigger:     add
+  expansion:   add(${1:selector})
+  description: Add elements to the set of matched elements.
+  categories:
+    - Traversing > Miscellaneous Traversing
+  group:
+    add():
+    - add( selector )
+
+- title:       add( elements )
+  version:     1.0
+  trigger:     add
+  expansion:   add(${1:elements})
+  description: Add elements to the set of matched elements.
+  categories:
+    - Traversing > Miscellaneous Traversing
+  group:
+    add():
+    - add( selector )
+
+- title:       add( html )
+  version:     1.0
+  trigger:     add
+  expansion:   add(${1:html})
+  description: Add elements to the set of matched elements.
+  categories:
+    - Traversing > Miscellaneous Traversing
+  group:
+    add():
+    - add( selector )
+
+- title:       add( jQuery object )
+  version:     1.3.2
+  trigger:     add
+  expansion:   add(${1:jQuery object})
+  description: Add elements to the set of matched elements.
+  categories:
+    - Traversing > Miscellaneous Traversing
+  group:
+    add():
+    - add( selector )
+
+- title:       add( selector, context )
+  version:     1.4
+  trigger:     add
+  expansion:   add(${1:selector}, ${2:context})
+  description: Add elements to the set of matched elements.
+  categories:
+    - Traversing > Miscellaneous Traversing
+  group:
+    add():
+    - add( selector )
+
+- title:       andSelf()
+  version:     1.2
+  trigger:     andSelf
+  expansion:   andSelf()
+  description: Add the previous set of elements on the stack to the current set.
+  categories:
+    - Traversing > Miscellaneous Traversing
+
+- title:       children( [selector] )
+  version:     1.0
+  trigger:     children
+  expansion:   children(${1:[selector]})
+  description: Get the children of each element in the set of matched elements, optionally filtered by a selector.
+  categories:
+    - Traversing > Tree Traversal
+
+- title:       closest( selector )
+  version:     1.3
+  trigger:     closest
+  expansion:   closest(${1:selector})
+  description: Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    closest():
+    - closest( selector  )
+
+- title:       closest( selector [, context] )
+  version:     1.4
+  trigger:     closest
+  expansion:   closest(${1:selector}, ${2:context})
+  description: Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    closest():
+    - closest( selector  )
+
+- title:       closest( jQuery object )
+  version:     1.6
+  trigger:     closest
+  expansion:   closest(${1:jQuery object})
+  description: Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    closest():
+    - closest( selector  )
+
+- title:       closest( element )
+  version:     1.6
+  trigger:     closest
+  expansion:   closest(${1:element})
+  description: Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    closest():
+    - closest( selector  )
+
+- title:       closest( selectors [, context] )
+  version:     1.4
+  trigger:     closest
+  expansion:   closest(${1:selectors}, ${2:context})
+  description: Gets an array of all the elements and selectors matched against the current element up through the DOM tree.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    closest():
+    - closest( selectors [ , context ]  )
+
+- title:       contents()
+  version:     1.2
+  trigger:     contents
+  expansion:   contents()
+  description: Get the children of each element in the set of matched elements, including text and comment nodes.
+  categories:
+    - Traversing > Miscellaneous Traversing
+
+- title:       each( function(index, Element) )
+  version:     1.0
+  trigger:     each
+  expansion:   each(function(index, Element){${0}});
+  description: Iterate over a jQuery object, executing a function for each matched element.
+  categories:
+    - Miscellaneous > Collection Manipulation
+    - Traversing
+
+- title:       end()
+  version:     1.0
+  trigger:     end
+  expansion:   end()
+  description: End the most recent filtering operation in the current chain and return the set of matched elements to its previous state.
+  categories:
+    - Traversing > Miscellaneous Traversing
+
+- title:       eq( index )
+  version:     1.1.2
+  trigger:     eq
+  expansion:   eq(${1:index})
+  description: Reduce the set of matched elements to the one at the specified index.
+  categories:
+    - Traversing > Filtering
+
+- title:       filter( selector )
+  version:     1.0
+  trigger:     filter
+  expansion:   filter(${1:selector})
+  description: Reduce the set of matched elements to those that match the selector or pass the function's test.
+  categories:
+    - Traversing > Filtering
+  group:
+    filter():
+    - filter( selector )
+
+- title:       filter( function(index) )
+  version:     1.0
+  trigger:     filter
+  expansion:   filter(function(index) {${0}})
+  description: Reduce the set of matched elements to those that match the selector or pass the function's test.
+  categories:
+    - Traversing > Filtering
+  group:
+    filter():
+    - filter( selector )
+
+- title:       filter( element )
+  version:     1.4
+  trigger:     filter
+  expansion:   filter(${1:element})
+  description: Reduce the set of matched elements to those that match the selector or pass the function's test.
+  categories:
+    - Traversing > Filtering
+  group:
+    filter():
+    - filter( selector )
+
+- title:       filter( jQuery object )
+  version:     1.4
+  trigger:     filter
+  expansion:   filter(${1:jQuery object})
+  description: Reduce the set of matched elements to those that match the selector or pass the function's test.
+  categories:
+    - Traversing > Filtering
+  group:
+    filter():
+    - filter( selector )
+
+- title:       find( selector )
+  version:     1.0
+  trigger:     find
+  expansion:   find(${1:selector})
+  description: Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    find():
+    - find( selector )
+
+- title:       find( jQuery object )
+  version:     1.6
+  trigger:     find
+  expansion:   find(${1:jQuery object})
+  description: Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    find():
+    - find( selector )
+
+- title:       find( element  )
+  version:     1.6
+  trigger:     find
+  expansion:   find(${1:element })
+  description: Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    find():
+    - find( selector )
+
+- title:       first()
+  version:     1.4
+  trigger:     first
+  expansion:   first()
+  description: Reduce the set of matched elements to the first in the set.
+  categories:
+    - Traversing > Filtering
+
+- title:       has( selector )
+  version:     1.4
+  trigger:     has
+  expansion:   has(${1:selector})
+  description: Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
+  categories:
+    - Traversing > Filtering
+  group:
+    has():
+    - has( selector )
+
+- title:       has( contained  )
+  version:     1.4
+  trigger:     has
+  expansion:   has(${1:contained })
+  description: Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
+  categories:
+    - Traversing > Filtering
+  group:
+    has():
+    - has( selector )
+
+- title:       is( selector )
+  version:     1.0
+  trigger:     is
+  expansion:   is(${1:selector})
+  description: Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+  categories:
+    - Traversing > Filtering
+  group:
+    is():
+    - is( selector )
+
+- title:       is( function(index) )
+  version:     1.6
+  trigger:     is
+  expansion:   is(function(index) {${0}})
+  description: Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+  categories:
+    - Traversing > Filtering
+  group:
+    is():
+    - is( selector )
+
+- title:       is( jQuery object )
+  version:     1.6
+  trigger:     is
+  expansion:   is(${1:jQuery object})
+  description: Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+  categories:
+    - Traversing > Filtering
+  group:
+    is():
+    - is( selector )
+
+- title:       is( element )
+  version:     1.6
+  trigger:     is
+  expansion:   is(${1:element})
+  description: Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+  categories:
+    - Traversing > Filtering
+  group:
+    is():
+    - is( selector )
+
+- title:       last()
+  version:     1.4
+  trigger:     last
+  expansion:   last()
+  description: Reduce the set of matched elements to the final one in the set.
+  categories:
+    - Traversing > Filtering
+
+- title:       map( callback(index, domElement) )
+  version:     1.2
+  trigger:     map
+  expansion:   map(function(index, domElement) {${0}})
+  description: Pass each element in the current matched set through a function, producing a new jQuery object containing the return values.
+  categories:
+    - Traversing > Filtering
+
+- title:       next( [selector] )
+  version:     1.0
+  trigger:     next
+  expansion:   next(${1:[selector]})
+  description: Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
+  categories:
+    - Traversing > Tree Traversal
+
+- title:       nextAll( [selector] )
+  version:     1.2
+  trigger:     nextAll
+  expansion:   nextAll(${1:[selector]})
+  description: Get all following siblings of each element in the set of matched elements, optionally filtered by a selector.
+  categories:
+    - Traversing > Tree Traversal
+
+- title:       nextUntil( [selector] [, filter] )
+  version:     1.4
+  trigger:     nextUntil
+  expansion:   nextUntil(${1:[selector]}, ${2:[filter]})
+  description: Get all following siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object passed.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    nextUntil():
+    - nextUntil( [selector] [, filter] )
+
+- title:       nextUntil( [element] [, filter] )
+  version:     1.6
+  trigger:     nextUntil
+  expansion:   nextUntil(${1:[element]}, ${2:[filter]})
+  description: Get all following siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object passed.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    nextUntil():
+    - nextUntil( [selector] [, filter] )
+
+- title:       not( selector )
+  version:     1.0
+  trigger:     not
+  expansion:   not(${1:[selector]})
+  description: Remove elements from the set of matched elements.
+  categories:
+    - Traversing > Filtering
+    - Traversing > Miscellaneous Traversing
+  group:
+    not():
+    - not( selector )
+
+- title:       not( elements )
+  version:     1.0
+  trigger:     not
+  expansion:   not(${1:[elements]})
+  description: Remove elements from the set of matched elements.
+  categories:
+    - Traversing > Filtering
+    - Traversing > Miscellaneous Traversing
+  group:
+    not():
+    - not( selector )
+
+- title:       not( function(index) )
+  version:     1.4
+  trigger:     not
+  expansion:   not(function(index) {${0}})
+  description: Remove elements from the set of matched elements.
+  categories:
+    - Traversing > Filtering
+    - Traversing > Miscellaneous Traversing
+  group:
+    not():
+    - not( selector )
+
+- title:       not( jQuery object )
+  version:     1.4
+  trigger:     not
+  expansion:   not(${1:jQuery object})
+  description: Remove elements from the set of matched elements.
+  categories:
+    - Traversing > Filtering
+    - Traversing > Miscellaneous Traversing
+  group:
+    not():
+    - not( selector )
+
+- title:       offsetParent()
+  version:     1.2.6
+  trigger:     offsetParent
+  expansion:   offsetParent()
+  description: Get the closest ancestor element that is positioned.
+  categories:
+    - Offset
+    - Traversing > Tree Traversal
+
+- title:       parent( [selector] )
+  version:     1.0
+  trigger:     parent
+  expansion:   parent(${1:[selector]})
+  description: Get the parent of each element in the current set of matched elements, optionally filtered by a selector.
+  categories:
+    - Traversing > Tree Traversal
+
+- title:       parents( [selector] )
+  version:     1.0
+  trigger:     parents
+  expansion:   parents(${1:[selector]})
+  description: Get the ancestors of each element in the current set of matched elements, optionally filtered by a selector.
+  categories:
+    - Traversing > Tree Traversal
+
+- title:       parentsUntil( [selector] [, filter] )
+  version:     1.4
+  trigger:     parentsUntil
+  expansion:   parentsUntil(${1:[selector]}, ${2:[filter]})
+  description: Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    parentsUntil():
+    - parentsUntil( [selector] [, filter] )
+
+- title:       parentsUntil( [element] [, filter] )
+  version:     1.6
+  trigger:     parentsUntil
+  expansion:   parentsUntil(${1:[element]}, ${2:[filter]})
+  description: Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    parentsUntil():
+    - parentsUntil( [selector] [, filter] )
+
+- title:       prev( [selector] )
+  version:     1.0
+  trigger:     prev
+  expansion:   prev(${1:[selector]})
+  description: Get the immediately preceding sibling of each element in the set of matched elements, optionally filtered by a selector.
+  categories:
+    - Traversing > Tree Traversal
+
+- title:       prevAll( [selector] )
+  version:     1.2
+  trigger:     prevAll
+  expansion:   prevAll(${1:[selector]})
+  description: Get all preceding siblings of each element in the set of matched elements, optionally filtered by a selector.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    parentsUntil():
+    - parentsUntil( [selector] [, filter] )
+
+- title:       prevUntil( [selector] [, filter] )
+  version:     1.4
+  trigger:     prevUntil
+  expansion:   prevUntil(${1:[selector]}, ${2:[filter]})
+  description: Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    prevUntil():
+    - prevUntil( [selector] [, filter] )
+
+- title:       prevUntil( [element] [, filter] )
+  version:     1.6
+  trigger:     prevUntil
+  expansion:   prevUntil(${1:[element]}, ${2:[filter]})
+  description: Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object.
+  categories:
+    - Traversing > Tree Traversal
+  group:
+    prevUntil():
+    - prevUntil( [selector] [, filter] )
+
+- title:       siblings( [selector] )
+  version:     1.0
+  trigger:     siblings
+  expansion:   siblings(${1:[selector]})
+  description: Get the siblings of each element in the set of matched elements, optionally filtered by a selector.
+  categories:
+    - Traversing > Tree Traversal
+
+- title:       slice( start [, end] )
+  version:     1.1.4
+  trigger:     slice
+  expansion:   slice(${1:start}, ${2:end})
+  description: Reduce the set of matched elements to a subset specified by a range of indices.
+  categories:
+    - Traversing > Filtering
+
+- title:       after( content [, content] )
+  version:     1.0
+  trigger:     after
+  expansion:   after(${1:content}, ${2:content})
+  description: Insert content, specified by the parameter, after each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Outside
+  group:
+    after():
+    - after( content [, content] )
+
+- title:       after( function(index) )
+  version:     1.4
+  trigger:     after
+  expansion:   after(function(index){${0}})
+  description: Insert content, specified by the parameter, after each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Outside
+  group:
+    after():
+    - after( content [, content] )
+
+- title:       append( content [, content] )
+  version:     1.0
+  trigger:     append
+  expansion:   append(${1:content}, ${2:content})
+  description: Insert content, specified by the parameter, to the end of each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+  group:
+    append():
+    - append( content [, content] )
+
+- title:       append( function(index, html) )
+  version:     1.4
+  trigger:     append
+  expansion:   append(function(index, html){${0}})
+  description: Insert content, specified by the parameter, to the end of each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+  group:
+    append():
+    - append( content [, content] )
+
+- title:       appendTo( target )
+  version:     1.0
+  trigger:     appendTo
+  expansion:   appendTo(${1:target})
+  description: Insert every element in the set of matched elements to the end of the target.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+
+- title:       before( content [, content] )
+  version:     1.0
+  trigger:     before
+  expansion:   before(${1:content}, ${2:content})
+  description: Insert content, specified by the parameter, before each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Outside
+  group:
+    before():
+    - before( content [, content] )
+
+- title:       before( function )
+  version:     1.4
+  trigger:     before
+  expansion:   before(function(){${0}})
+  description: Insert content, specified by the parameter, before each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Outside
+  group:
+    before():
+    - before( content [, content] )
+
+- title:       clone( [withDataAndEvents] )
+  version:     1.0
+  trigger:     clone
+  expansion:   clone(${1:[withDataAndEvents]})
+  description: Create a deep copy of the set of matched elements.
+  categories:
+    - Manipulation > Copying
+  group:
+    clone():
+    - clone( [withDataAndEvents] )
+
+- title:       clone( [withDataAndEvents] [, deepWithDataAndEvents] )
+  version:     1.5
+  trigger:     clone
+  expansion:   clone(${1:[withDataAndEvents]}, ${2:[deepWithDataAndEvents]})
+  description: Create a deep copy of the set of matched elements.
+  categories:
+    - Manipulation > Copying
+  group:
+    clone():
+    - clone( [withDataAndEvents] )
+
+- title:       css( propertyName )
+  version:     1.0
+  trigger:     css
+  expansion:   css(${1:propertyName})
+  description: Get the value of a style property for the first element in the set of matched elements.
+  categories:
+    - CSS
+    - Manipulation > Style Properties
+  group:
+    css():
+    - css( propertyName  )
+
+- title:       css( propertyName , value  )
+  version:     1.0
+  trigger:     css
+  expansion:   css(${1:propertyName}, ${2:value})
+  description: Set one or more CSS properties for the set of matched elements.
+  categories:
+    - CSS
+    - Manipulation > Style Properties
+  group:
+    css():
+    - css( propertyName , value  )
+
+- title:       css( propertyName, function(index, value) )
+  version:     1.4
+  trigger:     css
+  expansion:   css(${1:propertyName}, function(index, value) {${0}})
+  description: Set one or more CSS properties for the set of matched elements.
+  categories:
+    - CSS
+    - Manipulation > Style Properties
+  group:
+    css():
+    - css( propertyName , value  )
+
+- title:       css( map )
+  version:     1.0
+  trigger:     css
+  expansion:   css(${1:map})
+  description: Set one or more CSS properties for the set of matched elements.
+  categories:
+    - CSS
+    - Manipulation > Style Properties
+  group:
+    css():
+    - css( propertyName , value  )
+
+- title:       detach( [selector] )
+  version:     1.4
+  trigger:     detach
+  expansion:   detach(${1:[selector]})
+  description: Remove the set of matched elements from the DOM.
+  categories:
+    - Manipulation > DOM Removal
+
+- title:       empty()
+  version:     1.0
+  trigger:     empty
+  expansion:   empty()
+  description: Remove all child nodes of the set of matched elements from the DOM.
+  categories:
+    - Manipulation > DOM Removal
+
+- title:       height()
+  version:     1.0
+  trigger:     height
+  expansion:   height()
+  description: Get the current computed height for the first element in the set of matched elements.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+  group:
+    height():
+    - height()
+
+- title:       height( value )
+  version:     1.0
+  trigger:     height
+  expansion:   height(${1:value})
+  description: Set the CSS height of every matched element.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+  group:
+    height():
+    - height( value )
+
+- title:       height( function(index, height) )
+  version:     1.4.1
+  trigger:     height
+  expansion:   height(function(index, height) {${0}})
+  description: Set the CSS height of every matched element.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+  group:
+    height():
+    - height( value )
+
+- title:       innerHeight()
+  version:     1.2.6
+  trigger:     innerHeight
+  expansion:   innerHeight()
+  description: Get the current computed height for the first element in the set of matched elements, including padding but not border.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+
+- title:       innerWidth()
+  version:     1.2.6
+  trigger:     innerWidth
+  expansion:   innerWidth()
+  description: Get the current computed width for the first element in the set of matched elements, including padding but not border.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+
+- title:       insertAfter( target )
+  version:     1.0
+  trigger:     insertAfter
+  expansion:   insertAfter(${1:target})
+  description: Insert every element in the set of matched elements after the target.
+  categories:
+    - Manipulation > DOM Insertion, Outside
+
+- title:       insertBefore( target )
+  version:     1.0
+  trigger:     insertBefore
+  expansion:   insertBefore(${1:target})
+  description: Insert every element in the set of matched elements before the target.
+  categories:
+    - Manipulation > DOM Insertion, Outside
+
+- title:       offset()
+  version:     1.2
+  trigger:     offset
+  expansion:   offset()
+  description: Get the current coordinates of the first element in the set of matched elements, relative to the document.
+  categories:
+    - CSS
+    - Offset
+    - Manipulation > Style Properties
+  group:
+    offset():
+    - offset()
+
+- title:       offset( coordinates )
+  version:     1.4
+  trigger:     offset
+  expansion:   offset(${1:coordinates})
+  description: Set the current coordinates of every element in the set of matched elements, relative to the document.
+  categories:
+    - CSS
+    - Offset
+    - Manipulation > Style Properties
+  group:
+    offset():
+    - offset( coordinates )
+
+- title:       offset( function(index, coords) )
+  version:     1.4
+  trigger:     offset
+  expansion:   offset(function(index, coords) {${0}})
+  description: Set the current coordinates of every element in the set of matched elements, relative to the document.
+  categories:
+    - CSS
+    - Offset
+    - Manipulation > Style Properties
+  group:
+    offset():
+    - offset( coordinates )
+
+- title:       outerHeight( [includeMargin] )
+  version:     1.2.6
+  trigger:     outerHeight
+  expansion:   outerHeight(${1:[includeMargin]})
+  description: Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin. Returns an integer (without "px") representation of the value or null if called on an empty set of elements.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+
+- title:       outerWidth( [includeMargin] )
+  version:     1.2.6
+  trigger:     outerWidth
+  expansion:   outerWidth(${1:[includeMargin]})
+  description: Get the current computed width for the first element in the set of matched elements, including padding and border.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+
+- title:       position()
+  version:     1.2
+  trigger:     position
+  expansion:   position()
+  description: Get the current coordinates of the first element in the set of matched elements, relative to the offset parent.
+  categories:
+    - CSS
+    - Offset
+    - Manipulation > Style Properties
+
+- title:       prepend( content [, content] )
+  version:     1.0
+  trigger:     prepend
+  expansion:   prepend(${1:content}, ${2:content})
+  description: Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+  group:
+    prepend():
+    - prepend( content [, content] )
+
+- title:       prepend( function(index, html) )
+  version:     1.4
+  trigger:     prepend
+  expansion:   prepend(function(index, html) {${0}})
+  description: Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+  group:
+    prepend():
+    - prepend( content [, content] )
+
+- title:       prependTo( target )
+  version:     1.0
+  trigger:     prependTo
+  expansion:   prependTo(${1:target})
+  description: Insert every element in the set of matched elements to the beginning of the target.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+
+- title:       remove( [selector] )
+  version:     1.0
+  trigger:     remove
+  expansion:   remove(${1:selector})
+  description: Remove the set of matched elements from the DOM.
+  categories:
+    - Manipulation > DOM Removal
+
+- title:       replaceAll( target )
+  version:     1.2
+  trigger:     replaceAll
+  expansion:   replaceAll(${1:target})
+  description: Replace each target element with the set of matched elements.
+  categories:
+    - Manipulation > DOM Replacement
+
+- title:       replaceWith( newContent )
+  version:     1.2
+  trigger:     replaceWith
+  expansion:   replaceWith(${1:newContent})
+  description: Replace each element in the set of matched elements with the provided new content.
+  categories:
+    - Manipulation > DOM Replacement
+  group:
+    replaceWith():
+    - replaceWith( newContent )
+
+- title:       scrollLeft()
+  version:     1.2.6
+  trigger:     scrollLeft
+  expansion:   scrollLeft()
+  description: Get the current horizontal position of the scroll bar for the first element in the set of matched elements.
+  categories:
+    - CSS
+    - Offset
+    - Manipulation > Style Properties
+  group:
+    scrollLeft():
+    - scrollLeft()
+
+- title:       scrollLeft( value )
+  version:     1.2.6
+  trigger:     scrollLeft
+  expansion:   scrollLeft(${1:value})
+  description: Set the current horizontal position of the scroll bar for each of the set of matched elements.
+  categories:
+    - CSS
+    - Offset
+    - Manipulation > Style Properties
+  group:
+    scrollLeft():
+    - scrollLeft( value )
+
+- title:       scrollTop()
+  version:     1.2.6
+  trigger:     scrollTop
+  expansion:   scrollTop()
+  description: Get the current vertical position of the scroll bar for the first element in the set of matched elements.
+  categories:
+    - CSS
+    - Offset
+    - Manipulation > Style Properties
+  group:
+    scrollTop():
+    - scrollTop()
+
+- title:       scrollTop( value )
+  version:     1.2.6
+  trigger:     scrollTop
+  expansion:   scrollTop(${1:value})
+  description: SGet the combined text contents of each element in the set of matched elements, including their descendants.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+  group:
+    scrollTop():
+    - scrollTop( value )
+
+- title:       text()
+  version:     1.0
+  trigger:     text
+  expansion:   text()
+  description: Get the current vertical position of the scroll bar for the first element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+  group:
+    text():
+    - text()
+
+- title:       text( textString )
+  version:     1.0
+  trigger:     text
+  expansion:   text(${1:textString})
+  description: Set the content of each element in the set of matched elements to the specified text.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+  group:
+    text():
+    - text( valtextStringue )
+
+- title:       text( function(index, text) )
+  version:     1.4
+  trigger:     text
+  expansion:   text(function(index, text) {${0}})
+  description: Set the content of each element in the set of matched elements to the specified text.
+  categories:
+    - Manipulation > DOM Insertion, Inside
+  group:
+    text():
+    - text( valtextStringue )
+
+- title:       unwrap()
+  version:     1.4
+  trigger:     unwrap
+  expansion:   unwrap()
+  description: Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.
+  categories:
+    - Manipulation > DOM Insertion, Around
+    - Manipulation > DOM Removal
+
+- title:       width()
+  version:     1.0
+  trigger:     width
+  expansion:   width()
+  description: Get the current computed width for the first element in the set of matched elements.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+  group:
+    width():
+    - width()
+
+- title:       width( value )
+  version:     1.0
+  trigger:     width
+  expansion:   width(${1:value})
+  description: Set the CSS width of each element in the set of matched elements.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+  group:
+    width():
+    - width( value )
+
+- title:       width( function(index, width) )
+  version:     1.4.1
+  trigger:     width
+  expansion:   width(function(index, width) {${0}})
+  description: Set the CSS width of each element in the set of matched elements.
+  categories:
+    - CSS
+    - Dimensions
+    - Manipulation > Style Properties
+  group:
+    width():
+    - width( value )
+
+- title:       wrap( wrappingElement )
+  version:     1.0
+  trigger:     wrap
+  expansion:   wrap(${1:wrappingElement})
+  description: Wrap an HTML structure around each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Around
+  group:
+    wrap():
+    - wrap( wrappingElement )
+
+- title:       wrap( function(index) )
+  version:     1.4
+  trigger:     wrap
+  expansion:   wrap(function(index) {${0}})
+  description: Wrap an HTML structure around each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Around
+  group:
+    wrap():
+    - wrap( wrappingElement )
+
+- title:       wrapAll( wrappingElement )
+  version:     1.2
+  trigger:     wrapAll
+  expansion:   wrapAll(${1:wrappingElement})
+  description: Wrap an HTML structure around all elements in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Around
+
+- title:       wrapInner( wrappingElement )
+  version:     1.2
+  trigger:     wrapInner
+  expansion:   wrapInner(${1:wrappingElement})
+  description: Wrap an HTML structure around the content of each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Around
+  group:
+    wrapInner():
+    - wrapInner( wrappingElement )
+
+- title:       wrapInner( function(index) )
+  version:     1.4
+  trigger:     wrapInner
+  expansion:   wrapInner(function(index) {${0}})
+  description: Wrap an HTML structure around the content of each element in the set of matched elements.
+  categories:
+    - Manipulation > DOM Insertion, Around
+  group:
+    wrapInner():
+    - wrapInner( wrappingElement )
+
+- title:       jQuery.cssHooks
+  version:     1.4.3
+  trigger:     cssHooks
+  expansion:   \$.cssHooks
+  description: Hook directly into jQuery to override how particular CSS properties are retrieved or set, normalize CSS property naming, or create custom properties.
+  categories:
+    - CSS
+
+- title:       bind( eventType [, eventData] , handler(eventObject) )
+  version:     1.0
+  trigger:     bind
+  expansion:   bind(${1:eventType}, ${2:eventData}, function(event) {${0}})
+  description: Attach a handler to an event for the elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    bind():
+    - bind( eventType [, eventData] , handler(eventObject) )
+
+- title:       bind( eventType [, eventData], preventBubble )
+  version:     1.4.3
+  trigger:     bind
+  expansion:   bind(${1:eventType}, ${2:eventData}, ${3:preventBubble})
+  description: Attach a handler to an event for the elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    bind():
+    - bind( eventType [, eventData] , handler(eventObject) )
+
+- title:       bind( events )
+  version:     1.4
+  trigger:     bind
+  expansion:   bind(${1:events})
+  description: Attach a handler to an event for the elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    bind():
+    - bind( eventType [, eventData] , handler(eventObject) )
+
+- title:       blur( handler(eventObject) )
+  version:     1.0
+  trigger:     blur
+  expansion:   blur(function(event) {${0}})
+  description: Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    blur():
+    - blur( handler(eventObject) )
+
+- title:       blur( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     blur
+  expansion:   blur(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    blur():
+    - blur( handler(eventObject) )
+
+- title:       blur()
+  version:     1.0
+  trigger:     blur
+  expansion:   blur()
+  description: Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    blur():
+    - blur( handler(eventObject) )
+
+- title:       change( handler(eventObject) )
+  version:     1.0
+  trigger:     change
+  expansion:   change(function(event) {${0}})
+  description: Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    change():
+    - change( handler(eventObject) )
+
+- title:       change( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     change
+  expansion:   change(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    change():
+    - change( handler(eventObject) )
+
+- title:       change()
+  version:     1.0
+  trigger:     change
+  expansion:   change()
+  description: Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    change():
+    - change( handler(eventObject) )
+
+- title:       click( handler(eventObject) )
+  version:     1.0
+  trigger:     click
+  expansion:   click(function(event) {${0}})
+  description: Bind an event handler to the "click" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    click():
+    - click( handler(eventObject) )
+
+- title:       click( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     click
+  expansion:   click(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "click" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    click():
+    - click( handler(eventObject) )
+
+- title:       click()
+  version:     1.0
+  trigger:     click
+  expansion:   click()
+  description: Bind an event handler to the "click" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    click():
+    - click( handler(eventObject) )
+
+- title:       dblclick( handler(eventObject) )
+  version:     1.0
+  trigger:     dblclick
+  expansion:   dblclick(function(event) {${0}})
+  description: Bind an event handler to the "dblclick" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    dblclick():
+    - dblclick( handler(eventObject) )
+
+- title:       dblclick( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     dblclick
+  expansion:   dblclick(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "dblclick" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    dblclick():
+    - dblclick( handler(eventObject) )
+
+- title:       dblclick()
+  version:     1.0
+  trigger:     dblclick
+  expansion:   dblclick()
+  description: Bind an event handler to the "dblclick" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    dblclick():
+    - dblclick( handler(eventObject) )
+
+- title:       delegate( selector, eventType, handler(eventObject) )
+  version:     1.4.2
+  trigger:     delegate
+  expansion:   delegate(${1:selector}, ${2:eventType}, function(event) {${0}})
+  description: Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    delegate():
+    - delegate( selector, eventType, handler(eventObject) )
+
+- title:       delegate( selector, eventType, eventData, handler(eventObject) )
+  version:     1.4.2
+  trigger:     delegate
+  expansion:   delegate(${1:selector}, ${2:eventType}, ${3:eventData}, function(event) {${0}})
+  description: Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    delegate():
+    - delegate( selector, eventType, handler(eventObject) )
+
+- title:       delegate( selector, events )
+  version:     1.4.3
+  trigger:     delegate
+  expansion:   delegate(${1:selector}, ${2:events})
+  description: Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    delegate():
+    - delegate( selector, eventType, handler(eventObject) )
+
+- title:       die()
+  version:     1.4.1
+  trigger:     die
+  expansion:   die()
+  description: Remove all event handlers previously attached using .live() from the elements.
+  categories:
+    - Deprecated
+    - Events > Event Handler Attachment
+  group:
+    die():
+    - die()
+
+- title:       die( eventType [, handler] )
+  version:     1.3
+  trigger:     die
+  expansion:   die(${1:eventType}, ${2:handler})
+  description: Remove an event handler previously attached using .live() from the elements.
+  categories:
+    - Deprecated
+    - Events > Event Handler Attachment
+  group:
+    die():
+    - die( eventType [, handler] )
+
+- title:       die( eventTypes )
+  version:     1.4.3
+  trigger:     die
+  expansion:   die(${1:eventTypes})
+  description: Remove an event handler previously attached using .live() from the elements.
+  categories:
+    - Deprecated
+    - Events > Event Handler Attachment
+  group:
+    die():
+    - die( eventType [, handler] )
+
+- title:       error( handler(eventObject) )
+  version:     1.0
+  trigger:     error
+  expansion:   error(function(event) {${0}})
+  description: Bind an event handler to the "error" JavaScript event.
+  categories:
+    - Events > Browser Events
+  group:
+    error():
+    - error( handler(eventObject) )
+
+- title:       error( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     error
+  expansion:   error(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "error" JavaScript event.
+  categories:
+    - Events > Browser Events
+  group:
+    error():
+    - error( handler(eventObject) )
+
+- title:       event.currentTarget
+  version:     1.3
+  trigger:     event.currentTarget
+  expansion:   event.currentTarget
+  description: The current DOM element within the event bubbling phase.
+  categories:
+    - Events > Event Object
+
+- title:       event.data
+  version:     1.1
+  trigger:     event.data
+  expansion:   event.data
+  description: An optional data map passed to an event method when the current executing handler is bound.
+  categories:
+    - Events > Event Object
+
+- title:       event.delegateTarget
+  version:     1.7
+  trigger:     event.delegateTarget
+  expansion:   event.delegateTarget
+  description: The element where the currently-called jQuery event handler was attached.
+  categories:
+    - Events > Event Object
+
+- title:       event.isDefaultPrevented()
+  version:     1.3
+  trigger:     event.isDefaultPrevented
+  expansion:   event.isDefaultPrevented()
+  description: Returns whether event.preventDefault() was ever called on this event object.
+  categories:
+    - Events > Event Object
+
+- title:       event.isImmediatePropagationStopped()
+  version:     1.3
+  trigger:     event.isImmediatePropagationStopped
+  expansion:   event.isImmediatePropagationStopped()
+  description: Returns whether event.stopImmediatePropagation() was ever called on this event object.
+  categories:
+    - Events > Event Object
+
+- title:       event.isPropagationStopped()
+  version:     1.3
+  trigger:     event.isPropagationStopped
+  expansion:   event.isPropagationStopped()
+  description: Returns whether event.stopPropagation() was ever called on this event object.
+  categories:
+    - Events > Event Object
+
+- title:       event.namespace
+  version:     1.4.3
+  trigger:     event.namespace
+  expansion:   event.namespace
+  description: The namespace specified when the event was triggered.
+  categories:
+    - Events > Event Object
+
+- title:       event.pageX
+  version:     1.0.4
+  trigger:     event.pageX
+  expansion:   event.pageX
+  description: The mouse position relative to the left edge of the document.
+  categories:
+    - Events > Event Object
+
+- title:       event.pageY
+  version:     1.0.4
+  trigger:     event.pageY
+  expansion:   event.pageY
+  description: The mouse position relative to the top edge of the document.
+  categories:
+    - Events > Event Object
+
+- title:       event.preventDefault()
+  version:     1.0
+  trigger:     event.preventDefault
+  expansion:   event.preventDefault()
+  description: If this method is called, the default action of the event will not be triggered.
+  categories:
+    - Events > Event Object
+
+- title:       event.relatedTarget
+  version:     1.1.4
+  trigger:     event.relatedTarget
+  expansion:   event.relatedTarget
+  description: The other DOM element involved in the event, if any.
+  categories:
+    - Events > Event Object
+
+- title:       event.result
+  version:     1.3
+  trigger:     event.result
+  expansion:   event.result
+  description: The last value returned by an event handler that was triggered by this event, unless the value was undefined.
+  categories:
+    - Events > Event Object
+
+- title:       event.stopImmediatePropagation()
+  version:     1.3
+  trigger:     event.stopImmediatePropagation
+  expansion:   event.stopImmediatePropagation()
+  description: Keeps the rest of the handlers from being executed and prevents the event from bubbling up the DOM tree.
+  categories:
+    - Events > Event Object
+
+- title:       event.stopPropagation()
+  version:     1.0
+  trigger:     event.stopPropagation
+  expansion:   event.stopPropagation()
+  description: Prevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event.
+  categories:
+    - Events > Event Object
+
+- title:       event.timeStamp
+  version:     1.2.6
+  trigger:     event.timeStamp
+  expansion:   event.timeStamp
+  description: The difference in milliseconds between the time the browser created the event and January 1, 1970.
+  categories:
+    - Events > Event Object
+
+- title:       event.type
+  version:     1.0
+  trigger:     event.type
+  expansion:   event.type
+  description: Describes the nature of the event.
+  categories:
+    - Events > Event Object
+
+- title:       event.which
+  version:     1.1.3
+  trigger:     event.which
+  expansion:   event.which
+  description: For key or mouse events, this property indicates the specific key or button that was pressed.
+  categories:
+    - Events > Event Object
+
+- title:       focus( handler(eventObject) )
+  version:     1.0
+  trigger:     focus
+  expansion:   focus(function(event) {${0}})
+  description: Bind an event handler to the "focus" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    focus():
+    - focus( handler(eventObject) )
+
+- title:       focus( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     focus
+  expansion:   focus(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "focus" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    focus():
+    - focus( handler(eventObject) )
+
+- title:       focus()
+  version:     1.0
+  trigger:     focus
+  expansion:   focus()
+  description: Bind an event handler to the "focus" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    focus():
+    - focus( handler(eventObject) )
+
+- title:       focusin( handler(eventObject) )
+  version:     1.4
+  trigger:     focusin
+  expansion:   focusin(function(event) {${0}})
+  description: Bind an event handler to the "focusin" event.
+  categories:
+    - Events > Keyboard Events
+    - Events > Mouse Events
+  group:
+    focusin():
+    - focusin( handler(eventObject) )
+
+- title:       focusin( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     focusin
+  expansion:   focusin(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "focusin" event.
+  categories:
+    - Events > Keyboard Events
+    - Events > Mouse Events
+  group:
+    focusin():
+    - focusin( handler(eventObject) )
+
+- title:       focusout( handler(eventObject) )
+  version:     1.4
+  trigger:     focusout
+  expansion:   focusout(function(event) {${0}})
+  description: Bind an event handler to the "focusout" JavaScript event.
+  categories:
+    - Events > Keyboard Events
+    - Events > Mouse Events
+  group:
+    focusout():
+    - focusout( handler(eventObject) )
+
+- title:       focusout( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     focusout
+  expansion:   focusout(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "focusout" JavaScript event.
+  categories:
+    - Events > Keyboard Events
+    - Events > Mouse Events
+  group:
+    focusout():
+    - focusout( handler(eventObject) )
+
+- title:       hover( handlerIn(eventObject), handlerOut(eventObject) )
+  version:     1.0
+  trigger:     hover
+  expansion:   hover(function(event) {${0}}, function(event) {})
+  description: Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
+  categories:
+    - Events > Mouse Events
+  group:
+    hover():
+    - hover( handlerIn(eventObject), handlerOut(eventObject) )
+
+- title:       hover( handlerInOut(eventObject) )
+  version:     1.4
+  trigger:     hover
+  expansion:   hover(function(event) {${0}})
+  description: Bind a single handler to the matched elements, to be executed when the mouse pointer enters or leaves the elements.
+  categories:
+    - Events > Mouse Events
+  group:
+    hover():
+    - hover( handlerInOut(eventObject) )
+
+- title:       keydown( handler(eventObject) )
+  version:     1.0
+  trigger:     keydown
+  expansion:   keydown(function(event) {${0}})
+  description: Bind an event handler to the "keydown" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Keyboard Events
+  group:
+    keydown():
+    - keydown( handler(eventObject) )
+
+- title:       keydown( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     keydown
+  expansion:   keydown(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "keydown" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Keyboard Events
+  group:
+    keydown():
+    - keydown( handler(eventObject) )
+
+- title:       keydown()
+  version:     1.0
+  trigger:     keydown
+  expansion:   keydown()
+  description: Bind an event handler to the "keydown" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Keyboard Events
+  group:
+    keydown():
+    - keydown( handler(eventObject) )
+
+- title:       keypress( handler(eventObject) )
+  version:     1.0
+  trigger:     keypress
+  expansion:   keypress(function(event) {${0}})
+  description: Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Keyboard Events
+  group:
+    keypress():
+    - keypress( handler(eventObject) )
+
+- title:       keypress( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     keypress
+  expansion:   keypress(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Keyboard Events
+  group:
+    keypress():
+    - keypress( handler(eventObject) )
+
+- title:       keypress()
+  version:     1.0
+  trigger:     keypress
+  expansion:   keypress()
+  description: Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Keyboard Events
+  group:
+    keypress():
+    - keypress( handler(eventObject) )
+
+- title:       keyup( handler(eventObject) )
+  version:     1.0
+  trigger:     keyup
+  expansion:   keyup(function(event) {${0}})
+  description: Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Keyboard Events
+  group:
+    keyup():
+    - keyup( handler(eventObject) )
+
+- title:       keyup( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     keyup
+  expansion:   keyup(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Keyboard Events
+  group:
+    keyup():
+    - keyup( handler(eventObject) )
+
+- title:       keyup()
+  version:     1.0
+  trigger:     keyup
+  expansion:   keyup()
+  description: Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Keyboard Events
+  group:
+    keyup():
+    - keyup( handler(eventObject) )
+
+- title:       live( events, handler(eventObject) )
+  version:     1.3
+  trigger:     live
+  expansion:   live(${1:events}, function(event) {${0}})
+  description: Attach an event handler for all elements which match the current selector, now and in the future.
+  categories:
+    - Events > Keyboard Events
+  group:
+    live():
+    - live( events, handler(eventObject) )
+
+- title:       live( events, data, handler(eventObject) )
+  version:     1.4
+  trigger:     live
+  expansion:   live(${1:events}, ${2:data}, function(event) {${0}})
+  description: Attach an event handler for all elements which match the current selector, now and in the future.
+  categories:
+    - Events > Keyboard Events
+  group:
+    live():
+    - live( events, handler(eventObject) )
+
+- title:       live( events-map )
+  version:     1.4.3
+  trigger:     live
+  expansion:   live(${1:events-map})
+  description: Attach an event handler for all elements which match the current selector, now and in the future.
+  categories:
+    - Events > Keyboard Events
+  group:
+    live():
+    - live( events, handler(eventObject) )
+
+- title:       load( handler(eventObject) )
+  version:     1.0
+  trigger:     load
+  expansion:   load(function(event) {${0}})
+  description: Bind an event handler to the "load" JavaScript event.
+  categories:
+    - Events > Document Loading
+  group:
+    load():
+    - load( handler(eventObject) )
+
+- title:       load( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     load
+  expansion:   load(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "load" JavaScript event.
+  categories:
+    - Events > Document Loading
+  group:
+    load():
+    - load( handler(eventObject) )
+
+- title:       mousedown( handler(eventObject) )
+  version:     1.0
+  trigger:     mousedown
+  expansion:   mousedown(function(event) {${0}})
+  description: Bind an event handler to the "mousedown" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mousedown():
+    - mousedown( handler(eventObject) )
+
+- title:       mousedown( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     mousedown
+  expansion:   mousedown(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "mousedown" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mousedown():
+    - mousedown( handler(eventObject) )
+
+- title:       mousedown()
+  version:     1.0
+  trigger:     mousedown
+  expansion:   mousedown()
+  description: Bind an event handler to the "mousedown" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mousedown():
+    - mousedown( handler(eventObject) )
+
+- title:       mouseenter( handler(eventObject) )
+  version:     1.0
+  trigger:     mouseenter
+  expansion:   mouseenter(function(event) {${0}})
+  description: Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseenter():
+    - mouseenter( handler(eventObject) )
+
+- title:       mouseenter( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     mouseenter
+  expansion:   mouseenter(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseenter():
+    - mouseenter( handler(eventObject) )
+
+- title:       mouseenter()
+  version:     1.0
+  trigger:     mouseenter
+  expansion:   mouseenter()
+  description: Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseenter():
+    - mouseenter( handler(eventObject) )
+
+- title:       mouseleave( handler(eventObject) )
+  version:     1.0
+  trigger:     mouseleave
+  expansion:   mouseleave(function(event) {${0}})
+  description: Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseleave():
+    - mouseleave( handler(eventObject) )
+
+- title:       mouseleave( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     mouseleave
+  expansion:   mouseleave(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseleave():
+    - mouseleave( handler(eventObject) )
+
+- title:       mouseleave()
+  version:     1.0
+  trigger:     mouseleave
+  expansion:   mouseleave()
+  description: Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseleave():
+    - mouseleave( handler(eventObject) )
+
+- title:       mousemove( handler(eventObject) )
+  version:     1.0
+  trigger:     mousemove
+  expansion:   mousemove(function(event) {${0}})
+  description: Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mousemove():
+    - mousemove( handler(eventObject) )
+
+- title:       mousemove( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     mousemove
+  expansion:   mousemove(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mousemove():
+    - mousemove( handler(eventObject) )
+
+- title:       mousemove()
+  version:     1.0
+  trigger:     mousemove
+  expansion:   mousemove()
+  description: Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mousemove():
+    - mousemove( handler(eventObject) )
+
+- title:       mouseout( handler(eventObject) )
+  version:     1.0
+  trigger:     mouseout
+  expansion:   mouseout(function(event) {${0}})
+  description: Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseout():
+    - mouseout( handler(eventObject) )
+
+- title:       mouseout( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     mouseout
+  expansion:   mouseout(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseout():
+    - mouseout( handler(eventObject) )
+
+- title:       mouseout()
+  version:     1.0
+  trigger:     mouseout
+  expansion:   mouseout()
+  description: Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseout():
+    - mouseout( handler(eventObject) )
+
+- title:       mouseover( handler(eventObject) )
+  version:     1.0
+  trigger:     mouseover
+  expansion:   mouseover(function(event) {${0}})
+  description: Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseover():
+    - mouseover( handler(eventObject) )
+
+- title:       mouseover( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     mouseover
+  expansion:   mouseover(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseover():
+    - mouseover( handler(eventObject) )
+
+- title:       mouseover()
+  version:     1.0
+  trigger:     mouseover
+  expansion:   mouseover()
+  description: Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseover():
+    - mouseover( handler(eventObject) )
+
+- title:       mouseup( handler(eventObject) )
+  version:     1.0
+  trigger:     mouseup
+  expansion:   mouseup(function(event) {${0}})
+  description: Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseup():
+    - mouseup( handler(eventObject) )
+
+- title:       mouseup( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     mouseup
+  expansion:   mouseup(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseup():
+    - mouseup( handler(eventObject) )
+
+- title:       mouseup()
+  version:     1.0
+  trigger:     mouseup
+  expansion:   mouseup()
+  description: Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Mouse Events
+  group:
+    mouseup():
+    - mouseup( handler(eventObject) )
+
+- title:       off( events [, selector] [, handler(eventObject)] )
+  version:     1.7
+  trigger:     'off'
+  expansion:   off(${1:events}, ${2:selector}, function(event) {${0}})
+  description: Remove an event handler.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    off():
+    - off( events [, selector] [, handler(eventObject)] )
+
+- title:       off( events-map [, selector] )
+  version:     1.7
+  trigger:     'off'
+  expansion:   off(${1:events-map}, ${2:selector})
+  description: Remove an event handler.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    off():
+    - off( events [, selector] [, handler(eventObject)] )
+
+- title:       on( events [, selector] [, data] , handler(eventObject) )
+  version:     1.7
+  trigger:     'on'
+  expansion:   on(${1:events}, ${2:selector}, ${3:data}, function(event) {${0}})
+  description: Attach an event handler function for one or more events to the selected elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    on():
+    - on( events [, selector] [, data] , handler(eventObject) )
+
+- title:       on( events-map [, selector] [, data] ) )
+  version:     1.7
+  trigger:     'on'
+  expansion:   on(${1:events-map}, ${2:selector}, ${3:data})
+  description: Attach an event handler function for one or more events to the selected elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    on():
+    - on( events [, selector] [, data] , handler(eventObject) )
+
+- title:       one( events [, data] , handler(eventObject) )
+  version:     1.1
+  trigger:     one
+  expansion:   one(${1:events}, ${2:data}, function(event) {${0}})
+  description: Attach an event handler function for one or more events to the selected elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    one():
+    - one( events [, data] , handler(eventObject) )
+
+- title:       one( events [, selector] [, data], handler(eventObject) )
+  version:     1.7
+  trigger:     one
+  expansion:   one(${1:events}, ${2:selector}, ${3:data}, function(event) {${0}})
+  description: Attach an event handler function for one or more events to the selected elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    one():
+    - one( events [, data] , handler(eventObject) )
+
+- title:       one( events-map [, selector] [, data] )
+  version:     1.7
+  trigger:     one
+  expansion:   one(${1:events-map}, ${2:selector}, ${3:data})
+  description: Attach an event handler function for one or more events to the selected elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    one():
+    - one( events [, data] , handler(eventObject) )
+
+- title:       jQuery.proxy( function, context )
+  version:     1.4
+  trigger:     proxy
+  expansion:   \$.proxy(${1:function}, ${2:context})
+  description: Takes a function and returns a new one that will always have a particular context.
+  categories:
+    - Events > Event Handler Attachment
+    - Utilities
+  group:
+    jQuery.proxy():
+    - jQuery.proxy( function, context )
+
+- title:       jQuery.proxy( context, context )
+  version:     1.4
+  trigger:     proxy
+  expansion:   \$.proxy(${1:context}, ${2:context})
+  description: Takes a function and returns a new one that will always have a particular context.
+  categories:
+    - Events > Event Handler Attachment
+    - Utilities
+  group:
+    jQuery.proxy():
+    - jQuery.proxy( function, context )
+
+- title:       ready( handler )
+  version:     1.0
+  trigger:     ready
+  expansion:   ready(function() {${0}})
+  description: Specify a function to execute when the DOM is fully loaded.
+  categories:
+    - Events > Document Loading
+
+- title:       resize( handler(eventObject) )
+  version:     1.0
+  trigger:     resize
+  expansion:   resize(function(event) {${0}})
+  description: Bind an event handler to the "resize" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Browser Events
+  group:
+    resize():
+    - resize( handler(eventObject) )
+
+- title:       resize( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     resize
+  expansion:   resize(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "resize" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Browser Events
+  group:
+    resize():
+    - resize( handler(eventObject) )
+
+- title:       resize()
+  version:     1.0
+  trigger:     resize
+  expansion:   resize()
+  description: Bind an event handler to the "resize" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Browser Events
+  group:
+    resize():
+    - resize( handler(eventObject) )
+
+- title:       scroll( handler(eventObject) )
+  version:     1.0
+  trigger:     scroll
+  expansion:   scroll(function(event) {${0}})
+  description: Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Browser Events
+  group:
+    scroll():
+    - scroll( handler(eventObject) )
+
+- title:       scroll( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     scroll
+  expansion:   scroll(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Browser Events
+  group:
+    scroll():
+    - scroll( handler(eventObject) )
+
+- title:       scroll()
+  version:     1.0
+  trigger:     scroll
+  expansion:   scroll()
+  description: Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Browser Events
+  group:
+    scroll():
+    - scroll( handler(eventObject) )
+
+- title:       select( handler(eventObject) )
+  version:     1.0
+  trigger:     select
+  expansion:   select(function(event) {${0}})
+  description: Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    select():
+    - select( handler(eventObject) )
+
+- title:       select( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     select
+  expansion:   select(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    select():
+    - select( handler(eventObject) )
+
+- title:       select()
+  version:     1.0
+  trigger:     select
+  expansion:   select()
+  description: Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    select():
+    - select( handler(eventObject) )
+
+- title:       submit( handler(eventObject) )
+  version:     1.0
+  trigger:     submit
+  expansion:   submit(function(event) {${0}})
+  description: Bind an event handler to the "submit" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    submit():
+    - submit( handler(eventObject) )
+
+- title:       submit( [eventData], handler(eventObject) )
+  version:     1.4
+  trigger:     submit
+  expansion:   submit(${1:eventData}, function(event) {${0}})
+  description: Bind an event handler to the "submit" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    submit():
+    - submit( handler(eventObject) )
+
+- title:       submit()
+  version:     1.0
+  trigger:     submit
+  expansion:   submit()
+  description: Bind an event handler to the "submit" JavaScript event, or trigger that event on an element.
+  categories:
+    - Events > Form Events
+    - Forms
+  group:
+    submit():
+    - submit( handler(eventObject) )
+
+- title:       toggle( handler(eventObject), handler(eventObject) [, handler(eventObject)] )
+  version:     1.0
+  trigger:     toggle
+  expansion:   toggle(function() {${0}}, function() {}, function() {})
+  description: Bind two or more handlers to the matched elements, to be executed on alternate clicks.
+  categories:
+    - Events > Mouse Events
+
+- title:       trigger( eventType [, extraParameters] )
+  version:     1.0
+  trigger:     trigger
+  expansion:   trigger(${1:eventType}, ${2:extraParameters})
+  description: Execute all handlers and behaviors attached to the matched elements for the given event type.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    trigger():
+    - trigger( eventType [, extraParameters] )
+
+- title:       trigger( event )
+  version:     1.3
+  trigger:     trigger
+  expansion:   trigger(${1:event})
+  description: Execute all handlers and behaviors attached to the matched elements for the given event type.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    trigger():
+    - trigger( eventType [, extraParameters] )
+
+- title:       triggerHandler( eventType [, extraParameters] )
+  version:     1.2
+  trigger:     triggerHandler
+  expansion:   triggerHandler(${1:eventType}, ${2:extraParameters})
+  description: Execute all handlers attached to an element for an event.
+  categories:
+    - Events > Event Handler Attachment
+
+- title:       unbind( [eventType] [, handler(eventObject)] )
+  version:     1.0
+  trigger:     unbind
+  expansion:   unbind(${1:eventType}, function(event) {${0}})
+  description: Execute all handlers and behaviors attached to the matched elements for the given event type.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    unbind():
+    - unbind( [eventType] [, handler(eventObject)] )
+
+- title:       unbind( eventType, false )
+  version:     1.4.3
+  trigger:     unbind
+  expansion:   unbind((${1:eventType}, (${1:false})
+  description: Execute all handlers and behaviors attached to the matched elements for the given event type.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    unbind():
+    - unbind( [eventType] [, handler(eventObject)] )
+
+- title:       unbind( event )
+  version:     1.0
+  trigger:     unbind
+  expansion:   unbind((${1:event})
+  description: Execute all handlers and behaviors attached to the matched elements for the given event type.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    unbind():
+    - unbind( [eventType] [, handler(eventObject)] )
+
+- title:       undelegate()
+  version:     1.4.2
+  trigger:     undelegate
+  expansion:   undelegate()
+  description: Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    undelegate():
+    - undelegate()
+
+- title:       undelegate( selector, eventType )
+  version:     1.4.2
+  trigger:     undelegate
+  expansion:   undelegate(${1:selector}, ${2:eventType})
+  description: Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    undelegate():
+    - undelegate()
+
+- title:       undelegate( selector, eventType, handler(eventObject) )
+  version:     1.4.2
+  trigger:     undelegate
+  expansion:   undelegate(${1:selector}, ${2:eventType}, function(event) {${0}})
+  description: Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    undelegate():
+    - undelegate()
+
+- title:       undelegate( selector, events )
+  version:     1.4.3
+  trigger:     undelegate
+  expansion:   undelegate(${1:selector}, ${2:events})
+  description: Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    undelegate():
+    - undelegate()
+
+- title:       undelegate( namespace )
+  version:     1.6
+  trigger:     undelegate
+  expansion:   undelegate(${1:namespace})
+  description: Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
+  categories:
+    - Events > Event Handler Attachment
+  group:
+    undelegate():
+    - undelegate()
+
+- title:       unload( handler(eventObject) )
+  version:     1.0
+  trigger:     unload
+  expansion:   unload(function(event) {${0}})
+  description: Bind an event handler to the "unload" JavaScript event.
+  categories:
+    - Events > Document Loading
+  group:
+    unload():
+    - unload( handler(eventObject) )
+
+- title:       unload( [eventData], handler(eventObject) )
+  version:     1.4.3
+  trigger:     unload
+  expansion:   unload(${1:event}, function(event) {${0}})
+  description: Bind an event handler to the "unload" JavaScript event.
+  categories:
+    - Events > Document Loading
+  group:
+    unload():
+    - unload( handler(eventObject) )
+
+- title:       animate( properties [, duration] [, easing] [, complete] )
+  version:     1.0
+  trigger:     animate
+  expansion:   animate(${1:properties}, ${2:duration}, ${3:easing}, ${4:complete})
+  description: Perform a custom animation of a set of CSS properties.
+  categories:
+    - Effects > Custom
+  group:
+    animate():
+    - animate( properties [, duration] [, easing] [, complete] )
+
+- title:       animate( properties, options )
+  version:     1.0
+  trigger:     animate
+  expansion:   animate(${1:properties}, ${2:options})
+  description: Perform a custom animation of a set of CSS properties.
+  categories:
+    - Effects > Custom
+  group:
+    animate():
+    - animate( properties [, duration] [, easing] [, complete] )
+
+- title:       clearQueue( [queueName] )
+  version:     1.4
+  trigger:     clearQueue
+  expansion:   clearQueue(${1:[queueName]})
+  description: Remove from the queue all items that have not yet been run.
+  categories:
+    - Effects > Custom
+    - Data
+    - Utilities
+
+- title:       delay( duration [, queueName] )
+  version:     1.4
+  trigger:     delay
+  expansion:   delay(${1:duration}, ${2:queueName})
+  description: Set a timer to delay execution of subsequent items in the queue.
+  categories:
+    - Effects > Custom
+
+- title:       dequeue( [queueName] )
+  version:     1.2
+  trigger:     dequeue
+  expansion:   dequeue(${1:[queueName]})
+  description: Execute the next function on the queue for the matched elements.
+  categories:
+    - Effects > Custom
+    - Data
+    - Utilities
+
+- title:       fadeIn( [duration] [, callback] )
+  version:     1.0
+  trigger:     fadeIn
+  expansion:   fadeIn(${1:[duration]}, ${2:callback})
+  description: Display the matched elements by fading them to opaque.
+  categories:
+    - Effects > Fading
+  group:
+    fadeIn():
+    - fadeIn( [duration] [, callback] )
+
+- title:       fadeIn( [duration] [, easing] [, callback] )
+  version:     1.4.3
+  trigger:     fadeIn
+  expansion:   fadeIn(${1:[duration]}, ${2:easing}, ${3:callback})
+  description: Display the matched elements by fading them to opaque.
+  categories:
+    - Effects > Fading
+  group:
+    fadeIn():
+    - fadeIn( [duration] [, callback] )
+
+- title:       fadeOut( [duration] [, callback] )
+  version:     1.0
+  trigger:     fadeOut
+  expansion:   fadeOut(${1:[duration]}, ${2:callback})
+  description: Hide the matched elements by fading them to transparent.
+  categories:
+    - Effects > Fading
+  group:
+    fadeOut():
+    - fadeOut( [duration] [, callback] )
+
+- title:       fadeOut( [duration] [, easing] [, callback] )
+  version:     1.4.3
+  trigger:     fadeOut
+  expansion:   fadeOut(${1:[duration]}, ${2:easing}, ${3:callback})
+  description: Hide the matched elements by fading them to transparent.
+  categories:
+    - Effects > Fading
+  group:
+    fadeOut():
+    - fadeOut( [duration] [, callback] )
+
+- title:       fadeTo( duration, opacity [, callback] )
+  version:     1.0
+  trigger:     fadeTo
+  expansion:   fadeTo(${1:duration}, ${2:opacity}, ${3:callback})
+  description: Adjust the opacity of the matched elements.
+  categories:
+    - Effects > Fading
+  group:
+    fadeOut():
+    - fadeTo( duration, opacity [, callback] )
+
+- title:       fadeTo( duration, opacity [, easing] [, callback] )
+  version:     1.4.3
+  trigger:     fadeTo
+  expansion:   fadeTo(${1:duration}, ${2:opacity}, ${3:easing}, ${4:callback})
+  description: Adjust the opacity of the matched elements.
+  categories:
+    - Effects > Fading
+  group:
+    fadeOut():
+    - fadeTo( duration, opacity [, callback] )
+
+- title:       fadeToggle( [duration] [, easing] [, callback] )
+  version:     1.4.4
+  trigger:     fadeToggle
+  expansion:   fadeToggle(${1:[duration]}, ${2:easing}, ${3:callback})
+  description: Display or hide the matched elements by animating their opacity.
+  categories:
+    - Effects
+    - Effects > Fading
+
+- title:       jQuery.fx.interval
+  version:     1.4.3
+  trigger:     interval
+  expansion:   \$.fx.interval
+  description: The rate (in milliseconds) at which animations fire.
+  categories:
+    - Effects > Custom
+    - Properties > Properties of the Global jQuery Object
+
+- title:       jQuery.fx.off
+  version:     1.3
+  trigger:     'off'
+  expansion:   \$.fx.off
+  description: Globally disable all animations.
+  categories:
+    - Effects > Custom
+    - Properties > Properties of the Global jQuery Object
+
+- title:       hide()
+  version:     1.0
+  trigger:     hide
+  expansion:   hide()
+  description: Hide the matched elements.
+  categories:
+    - Effects > Basics
+  group:
+    hide():
+    - hide( )
+
+- title:       hide( duration [, callback] )
+  version:     1.0
+  trigger:     hide
+  expansion:   hide(${1:duration}, ${2:callback})
+  description: Hide the matched elements.
+  categories:
+    - Effects > Basics
+  group:
+    hide():
+    - hide( )
+
+- title:       hide( [duration] [, easing] [, callback] )
+  version:     1.4.3
+  trigger:     hide
+  expansion:   hide(${1:[duration]}, ${2:easing}, ${3:callback})
+  description: Hide the matched elements.
+  categories:
+    - Effects > Basics
+  group:
+    hide():
+    - hide( )
+
+- title:       queue( [ queueName ] )
+  version:     1.2
+  trigger:     queue
+  expansion:   queue(${1:[queueName]})
+  description: Show the queue of functions to be executed on the matched elements.
+  categories:
+    - Effects > Custom
+    - Data
+    - Utilities
+  group:
+    queue():
+    - queue( [ queueName ] )
+
+- title:       queue( [queueName] , newQueue )
+  version:     1.2
+  trigger:     queue
+  expansion:   queue(${1:[queueName]}, ${2:newQueue})
+  description: Manipulate the queue of functions to be executed on the matched elements.
+  categories:
+    - Effects > Custom
+    - Data
+    - Utilities
+  group:
+    queue():
+    - queue( [queueName] , newQueue )
+
+- title:       queue( [queueName], callback( next ) )
+  version:     1.2
+  trigger:     queue
+  expansion:   queue(${1:[queueName]}, function(next) {${0}})
+  description: Manipulate the queue of functions to be executed on the matched elements.
+  categories:
+    - Effects > Custom
+    - Data
+    - Utilities
+  group:
+    queue():
+    - queue( [queueName] , newQueue )
+
+- title:       show()
+  version:     1.0
+  trigger:     show
+  expansion:   show()
+  description: Display the matched elements.
+  categories:
+    - Effects > Basics
+  group:
+    show():
+    - show( )
+
+- title:       show( duration [, callback] )
+  version:     1.0
+  trigger:     show
+  expansion:   show(${1:duration}, ${2:callback})
+  description: Display the matched elements.
+  categories:
+    - Effects > Basics
+  group:
+    show():
+    - show( )
+
+- title:       show( [duration] [, easing] [, callback] )
+  version:     1.4.3
+  trigger:     show
+  expansion:   show(${1:[duration]}, ${2:easing}, ${3:callback})
+  description: Display the matched elements.
+  categories:
+    - Effects > Basics
+  group:
+    show():
+    - show( )
+
+- title:       slideDown( [duration] [, callback] )
+  version:     1.0
+  trigger:     slideDown
+  expansion:   slideDown(${1:[duration]}, ${2:callback})
+  description: Display the matched elements with a sliding motion.
+  categories:
+    - Effects > Sliding
+  group:
+    slideDown():
+    - slideDown( [duration] [, callback] )
+
+- title:       slideDown( [duration] [, easing] [, callback] )
+  version:     1.4.3
+  trigger:     slideDown
+  expansion:   slideDown(${1:[duration]}, ${2:easing}, ${3:callback})
+  description: Display the matched elements with a sliding motion.
+  categories:
+    - Effects > Sliding
+  group:
+    slideDown():
+    - slideDown( [duration] [, callback] )
+
+- title:       slideToggle( [duration] [, callback] )
+  version:     1.0
+  trigger:     slideToggle
+  expansion:   slideToggle(${1:[duration]}, ${2:callback})
+  description: Display or hide the matched elements with a sliding motion.
+  categories:
+    - Effects > Sliding
+  group:
+    slideToggle():
+    - slideToggle( [duration] [, callback] )
+
+- title:       slideToggle( [duration] [, easing] [, callback] )
+  version:     1.4.3
+  trigger:     slideToggle
+  expansion:   slideToggle(${1:[duration]}, ${2:easing}, ${3:callback})
+  description: Display or hide the matched elements with a sliding motion.
+  categories:
+    - Effects > Sliding
+  group:
+    slideToggle():
+    - slideToggle( [duration] [, callback] )
+
+- title:       slideUp( [duration] [, callback] )
+  version:     1.0
+  trigger:     slideUp
+  expansion:   slideUp(${1:[duration]}, ${2:callback})
+  description: Hide the matched elements with a sliding motion.
+  categories:
+    - Effects > Sliding
+  group:
+    slideUp():
+    - slideUp( [duration] [, callback] )
+
+- title:       slideUp( [duration] [, easing] [, callback] )
+  version:     1.4.3
+  trigger:     slideUp
+  expansion:   slideUp(${1:[duration]}, ${2:easing}, ${3:callback})
+  description: Hide the matched elements with a sliding motion.
+  categories:
+    - Effects > Sliding
+  group:
+    slideUp():
+    - slideUp( [duration] [, callback] )
+
+- title:       stop( [clearQueue] [, jumpToEnd] )
+  version:     1.2
+  trigger:     stop
+  expansion:   stop(${1:[clearQueue]}, ${2:jumpToEnd})
+  description: Stop the currently-running animation on the matched elements.
+  categories:
+    - Effects > Custom
+  group:
+    stop():
+    - stop( [clearQueue] [, jumpToEnd] )
+
+- title:       stop( [queue] [, clearQueue] [, jumpToEnd] )
+  version:     1.7
+  trigger:     stop
+  expansion:   stop(${1:[queue]}, ${2:clearQueue}, ${3:jumpToEnd})
+  description: Stop the currently-running animation on the matched elements.
+  categories:
+    - Effects > Custom
+  group:
+    stop():
+    - stop( [clearQueue] [, jumpToEnd] )
+
+- title:       toggle( [duration] [, callback] )
+  version:     1.0
+  trigger:     toggle
+  expansion:   toggle(${1:[duration]}, ${2:callback})
+  description: Display or hide the matched elements.
+  categories:
+    - Effects > Basics
+  group:
+    toggle():
+    - toggle( [duration] [, callback] )
+
+- title:       toggle( [duration] [, easing] [, callback] )
+  version:     1.4.3
+  trigger:     toggle
+  expansion:   toggle(${1:[duration]}, ${2:easing}, ${3:callback})
+  description: Display or hide the matched elements.
+  categories:
+    - Effects > Basics
+  group:
+    toggle():
+    - toggle( [duration] [, callback] )
+
+- title:       toggle( showOrHide )
+  version:     1.4.3
+  trigger:     toggle
+  expansion:   toggle(${1:showOrHide})
+  description: Display or hide the matched elements.
+  categories:
+    - Effects > Basics
+  group:
+    toggle():
+    - toggle( [duration] [, callback] )
+
+- title:       jQuery.ajax( url [, settings] )
+  version:     1.5
+  trigger:     ajax
+  expansion:   \$.ajax(${1:url}, {${0}})
+  description: Perform an asynchronous HTTP (Ajax) request.
+  categories:
+    - Ajax > Low-Level Interface
+  group:
+    jQuery.ajax():
+    - jQuery.ajax( url [, settings] )
+
+- title:       jQuery.ajax( settings )
+  version:     1.0
+  trigger:     ajax
+  expansion:   \$.ajax({${0}})
+  description: Perform an asynchronous HTTP (Ajax) request.
+  categories:
+    - Ajax > Low-Level Interface
+  group:
+    jQuery.ajax():
+    - jQuery.ajax( url [, settings] )
+
+- title:       ajaxComplete( handler(event, XMLHttpRequest, ajaxOptions) )
+  version:     1.0
+  trigger:     ajaxComplete
+  expansion:   ajaxComplete(function(event, XMLHttpRequest, ajaxOptions) {${0}})
+  description: Register a handler to be called when Ajax requests complete. This is an Ajax Event.
+  categories:
+    - Ajax > Global Ajax Event Handlers
+
+- title:       ajaxError( handler(event, jqXHR, ajaxSettings, thrownError) )
+  version:     1.0
+  trigger:     ajaxError
+  expansion:   ajaxError(function(event, jqXHR, ajaxSettings, thrownError) {${0}})
+  description: Register a handler to be called when Ajax requests complete with an error. This is an Ajax Event.
+  categories:
+    - Ajax > Global Ajax Event Handlers
+
+- title:       jQuery.ajaxPrefilter( [dataTypes] , handler(options, originalOptions, jqXHR) )
+  version:     1.5
+  trigger:     ajaxPrefilter
+  expansion:   \$.ajaxPrefilter(${1:[dataTypes]} , function(options, originalOptions, jqXHR) {${0}})
+  description: Register a handler to be called when Ajax requests complete with an error. This is an Ajax Event.
+  categories:
+    - Ajax > Global Ajax Event Handlers
+
+- title:       ajaxSend( handler(event, jqXHR, ajaxOptions) )
+  version:     1.0
+  trigger:     ajaxSend
+  expansion:   ajaxSend(function(event, jqXHR, ajaxOptions) {${0}})
+  description: Attach a function to be executed before an Ajax request is sent. This is an Ajax Event.
+  categories:
+    - Ajax > Global Ajax Event Handlers
+
+- title:       jQuery.ajaxSetup( options )
+  version:     1.1
+  trigger:     ajaxSetup
+  expansion:   \$.ajaxSetup({${0}})
+  description: Set default values for future Ajax requests.
+  categories:
+    - Ajax > Low-Level Interface
+
+- title:       ajaxStart( handler() )
+  version:     1.0
+  trigger:     ajaxStart
+  expansion:   ajaxStart(function() {${0}})
+  description: Register a handler to be called when the first Ajax request begins. This is an Ajax Event.
+  categories:
+    - Ajax > Global Ajax Event Handlers
+
+- title:       ajaxStop( handler() )
+  version:     1.0
+  trigger:     ajaxStop
+  expansion:   ajaxStop(function() {${0}})
+  description: Register a handler to be called when all Ajax requests have completed. This is an Ajax Event.
+  categories:
+    - Ajax > Global Ajax Event Handlers
+
+- title:       ajaxSuccess( handler(event, XMLHttpRequest, ajaxOptions) )
+  version:     1.0
+  trigger:     ajaxSuccess
+  expansion:   ajaxSuccess(function(event, XMLHttpRequest, ajaxOptions) {${0}})
+  description: Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.
+  categories:
+    - Ajax > Global Ajax Event Handlers
+
+- title:       jQuery.get( url [, data] [, success(data, textStatus, jqXHR)] [, dataType] )
+  version:     1.0
+  trigger:     get
+  expansion:   \$.get(${1:url}, ${2:data}, function(data, textStatus, jqXHR) {${0}}, ${3:dataType})
+  description: Load data from the server using a HTTP GET request.
+  categories:
+    - Ajax > Shorthand Methods
+
+- title:       jQuery.getJSON( url [, data] [, success(data, textStatus, jqXHR)] )
+  version:     1.0
+  trigger:     getJSON
+  expansion:   \$.getJSON(${1:url}, ${2:data}, function(data, textStatus, jqXHR) {${0}})
+  description: Load JSON-encoded data from the server using a GET HTTP request.
+  categories:
+    - Ajax > Shorthand Methods
+
+- title:       jQuery.getScript( url [, success(script, textStatus, jqXHR)] )
+  version:     1.0
+  trigger:     getScript
+  expansion:   \$.getScript(${1:url}, function(script, textStatus, jqXHR) {${0}})
+  description: Load a JavaScript file from the server using a GET HTTP request, then execute it.
+  categories:
+    - Ajax > Shorthand Methods
+
+- title:       load( url [, data] [, complete(responseText, textStatus, XMLHttpRequest)] )
+  version:     1.0
+  trigger:     load
+  expansion:   load(${1:url}, ${2:data}, function(responseText, textStatus, XMLHttpRequest) {${0}})
+  description: Load data from the server and place the returned HTML into the matched element.
+  categories:
+    - Ajax > Shorthand Methods
+
+- title:       jQuery.param( obj )
+  version:     1.2
+  trigger:     param
+  expansion:   \$.param(${1:obj})
+  description: Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.
+  categories:
+    - Miscellaneous > Collection Manipulation
+    - Forms
+    - Ajax > Helper Functions
+  group:
+    jQuery.param():
+    - jQuery.param( obj )
+
+- title:       jQuery.param( obj, traditional )
+  version:     1.4
+  trigger:     param
+  expansion:   \$.param(${1:obj}, ${2:traditional})
+  description: Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.
+  categories:
+    - Miscellaneous > Collection Manipulation
+    - Forms
+    - Ajax > Helper Functions
+  group:
+    jQuery.param():
+    - jQuery.param( obj )
+
+- title:       jQuery.post( url [, data] [, success(data, textStatus, jqXHR)] [, dataType] )
+  version:     1.0
+  trigger:     post
+  expansion:   \$.post(${1:url}, ${2:data}, function(data, textStatus, jqXHR) {${0}}, ${3:dataType})
+  description: Load data from the server using a HTTP POST request.
+  categories:
+    - Ajax > Shorthand Methods
+
+- title:       serialize()
+  version:     1.0
+  trigger:     serialize
+  expansion:   serialize()
+  description: Encode a set of form elements as a string for submission.
+  categories:
+    - Forms
+    - Ajax > Helper Functions
+
+- title:       serializeArray()
+  version:     1.0
+  trigger:     serializeArray
+  expansion:   serializeArray()
+  description: Encode a set of form elements as an array of names and values.
+  categories:
+    - Forms
+    - Ajax > Helper Functions
+
+- title:       jQuery.boxModel
+  version:     1.0
+  trigger:     boxModel
+  expansion:   \$.boxModel
+  description: Deprecated in jQuery 1.3 (see jQuery.support). States if the current page, in the user's browser, is being rendered using the W3C CSS Box Model.
+  categories:
+    - Deprecated
+    - Utilities
+
+- title:       jQuery.browser
+  version:     1.0
+  trigger:     browser
+  expansion:   \$.browser
+  description: Contains flags for the useragent, read from navigator.userAgent. We recommend against using this property; please try to use feature detection instead (see jQuery.support). jQuery.browser may be moved to a plugin in a future release of jQuery.
+  categories:
+    - Deprecated
+    - Properties > Properties of the Global jQuery Object
+    - Utilities
+
+- title:       jQuery.contains( container, contained )
+  version:     1.4
+  trigger:     contains
+  expansion:   \$.contains(${1:container}, ${2:contained})
+  description: Check to see if a DOM element is within another DOM element.
+  categories:
+    - Utilities
+
+- title:       jQuery.data( element, key, value )
+  version:     1.2.3
+  trigger:     data
+  expansion:   \$.data(${1:element}, ${2:key}, ${3:value})
+  description: Store arbitrary data associated with the specified element. Returns the value that was set.
+  categories:
+    - Data
+    - Utilities
+  group:
+    jQuery.data():
+    - jQuery.data( element, key, value )
+
+- title:       jQuery.data( element, key )
+  version:     1.2.3
+  trigger:     data
+  expansion:   \$.data(${1:element}, ${2:key})
+  description: Returns value at named data store for the element, as set by jQuery.data(element, name, value), or the full data store for the element.
+  categories:
+    - Data
+    - Utilities
+  group:
+    jQuery.data():
+    - jQuery.data( element, key )
+
+- title:       jQuery.data( element )
+  version:     1.4
+  trigger:     data
+  expansion:   \$.data(${1:element})
+  description: Returns value at named data store for the element, as set by jQuery.data(element, name, value), or the full data store for the element.
+  categories:
+    - Data
+    - Utilities
+  group:
+    jQuery.data():
+    - jQuery.data( element, key )
+
+
+- title:       jQuery.dequeue( element [, queueName] )
+  version:     1.3
+  trigger:     dequeue
+  expansion:   \$.dequeue(${1:element}, ${2:queueName})
+  description: Execute the next function on the queue for the matched element.
+  categories:
+    - Data
+    - Utilities
+
+- title:       jQuery.each( collection, callback(indexInArray, valueOfElement) )
+  version:     1.0
+  trigger:     each
+  expansion:   \$.each(${1:collection}, function(indexInArray, valueOfElement) {${0}})
+  description: A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
+  categories:
+    - Utilities
+
+- title:       jQuery.extend( target [, object1] [, objectN] )
+  version:     1.0
+  trigger:     extend
+  expansion:   \$.extend(${1:target}, ${2:object1}, ${3:objectN})
+  description: Merge the contents of two or more objects together into the first object.
+  categories:
+    - Utilities
+  group:
+    jQuery.extend():
+    - jQuery.extend( target [, object1] [, objectN] )
+
+- title:       jQuery.extend( [deep], target, object1 [, objectN] )
+  version:     1.1.4
+  trigger:     extend
+  expansion:   \$.extend(${1:[deep]}, ${2:target}, ${3:object1}, ${4:objectN})
+  description: Merge the contents of two or more objects together into the first object.
+  categories:
+    - Utilities
+  group:
+    jQuery.extend():
+    - jQuery.extend( target [, object1] [, objectN] )
+
+- title:       jQuery.globalEval( code )
+  version:     1.0.4
+  trigger:     globalEval
+  expansion:   \$.globalEval(${1:code})
+  description: Execute some JavaScript code globally.
+  categories:
+    - Utilities
+
+- title:       jQuery.grep( array, function(elementOfArray, indexInArray) [, invert] )
+  version:     1.0
+  trigger:     grep
+  expansion:   \$.grep(${1:array}, function(elementOfArray, indexInArray) {${0}}, ${2:invert})
+  description: Finds the elements of an array which satisfy a filter function. The original array is not affected.
+  categories:
+    - Utilities
+
+- title:       jQuery.inArray( value, array [, fromIndex] )
+  version:     1.2
+  trigger:     inArray
+  expansion:   \$.inArray(${1:value}, ${2:array}, ${3:fromIndex})
+  description: Search for a specified value within an array and return its index (or -1 if not found).
+  categories:
+    - Utilities
+
+- title:       jQuery.isArray( obj )
+  version:     1.3
+  trigger:     isArray
+  expansion:   \$.isArray(${1:obj})
+  description: Determine whether the argument is an array.
+  categories:
+    - Utilities
+
+- title:       jQuery.isEmptyObject( obj )
+  version:     1.4
+  trigger:     isEmptyObject
+  expansion:   \$.isEmptyObject(${1:obj})
+  description: Check to see if an object is empty (contains no properties).
+  categories:
+    - Utilities
+
+- title:       jQuery.isFunction( obj )
+  version:     1.2
+  trigger:     isFunction
+  expansion:   \$.isFunction(${1:obj})
+  description: Determine if the argument passed is a Javascript function object.
+  categories:
+    - Utilities
+
+- title:       jQuery.isNumeric( obj )
+  version:     1.7
+  trigger:     isNumeric
+  expansion:   \$.isNumeric(${1:obj})
+  description: Determines whether its argument is a number.
+  categories:
+    - Utilities
+
+- title:       jQuery.isPlainObject( object )
+  version:     1.4
+  trigger:     isPlainObject
+  expansion:   \$.isPlainObject(${1:object})
+  description: Check to see if an object is a plain object (created using "{}" or "new Object").
+  categories:
+    - Utilities
+
+- title:       jQuery.isWindow( obj )
+  version:     1.4.3
+  trigger:     isWindow
+  expansion:   \$.isWindow(${1:obj})
+  description: Determine whether the argument is a window.
+  categories:
+    - Utilities
+
+- title:       jQuery.isXMLDoc( node )
+  version:     1.1.4
+  trigger:     isXMLDoc
+  expansion:   \$.isXMLDoc(${1:node})
+  description: Check to see if a DOM node is within an XML document (or is an XML document).
+  categories:
+    - Utilities
+
+- title:       jQuery.makeArray( obj )
+  version:     1.2
+  trigger:     makeArray
+  expansion:   \$.makeArray(${1:obj})
+  description: Convert an array-like object into a true JavaScript array.
+  categories:
+    - Utilities
+
+- title:       jQuery.map( array, callback(elementOfArray, indexInArray) )
+  version:     1.0
+  trigger:     map
+  expansion:   \$.map(${1:array}, function(elementOfArray, indexInArray) {${0}})
+  description: Translate all items in an array or object to new array of items.
+  categories:
+    - Utilities
+  group:
+    jQuery.map():
+    - jQuery.map( array, callback(elementOfArray, indexInArray) )
+
+- title:       jQuery.map( arrayOrObject, callback( value, indexOrKey ) )
+  version:     1.7
+  trigger:     map
+  expansion:   \$.map(${1:arrayOrObject}, function(value, indexOrKey) {${0}})
+  description: Translate all items in an array or object to new array of items.
+  categories:
+    - Utilities
+  group:
+    jQuery.map():
+    - jQuery.map( array, callback(elementOfArray, indexInArray) )
+
+- title:       jQuery.merge( first, second )
+  version:     1.0
+  trigger:     merge
+  expansion:   \$.merge(${1:first}, ${2:second})
+  description: Merge the contents of two arrays together into the first array.
+  categories:
+    - Utilities
+
+- title:       jQuery.noop()
+  version:     1.4
+  trigger:     noop
+  expansion:   \$.noop()
+  description: An empty function.
+  categories:
+    - Utilities
+
+- title:       jQuery.now()
+  version:     1.4.3
+  trigger:     now
+  expansion:   \$.now()
+  description: Return a number representing the current time.
+  categories:
+    - Utilities
+
+- title:       jQuery.parseJSON( json )
+  version:     1.4.1
+  trigger:     parseJSON
+  expansion:   \$.parseJSON(${1:json})
+  description: Takes a well-formed JSON string and returns the resulting JavaScript object.
+  categories:
+    - Utilities
+
+- title:       jQuery.parseXML( data )
+  version:     1.5
+  trigger:     parseXML
+  expansion:   \$.parseXML(${1:data})
+  description: Parses a string into an XML document.
+  categories:
+    - Utilities
+
+- title:       jQuery.queue( element [, queueName] )
+  version:     1.3
+  trigger:     queue
+  expansion:   \$.queue(${1:element}, ${2:queueName})
+  description: Show the queue of functions to be executed on the matched element.
+  categories:
+    - Data
+    - Utilities
+  group:
+    jQuery.queue():
+    - jQuery.queue( element [, queueName] )
+
+- title:       jQuery.queue( element, queueName, newQueue )
+  version:     1.3
+  trigger:     queue
+  expansion:   \$.queue(${1:element}, ${2:queueName}, ${3:newQueue})
+  description: Manipulate the queue of functions to be executed on the matched element.
+  categories:
+    - Data
+    - Utilities
+  group:
+    jQuery.queue():
+    - jQuery.queue( element, queueName, newQueue )
+
+- title:       jQuery.queue( element, queueName, callback() )
+  version:     1.3
+  trigger:     queue
+  expansion:   \$.queue(${1:element}, ${2:queueName}, function() {${0}})
+  description: Manipulate the queue of functions to be executed on the matched element.
+  categories:
+    - Data
+    - Utilities
+  group:
+    jQuery.queue():
+    - jQuery.queue( element, queueName, newQueue )
+
+- title:       jQuery.removeData( element [, name] )
+  version:     1.2.3
+  trigger:     removeData
+  expansion:   \$.removeData(${1:element}, ${2:name})
+  description: Remove a previously-stored piece of data.
+  categories:
+    - Data
+    - Utilities
+
+- title:       jQuery.support
+  version:     1.3
+  trigger:     support
+  expansion:   \$.support
+  description: A collection of properties that represent the presence of different browser features or bugs. Primarily intended for jQuery's internal use; specific properties may be removed when they are no longer needed internally to improve page startup performance.
+  categories:
+    - Properties > Properties of the Global jQuery Object
+    - Utilities
+
+- title:       jQuery.trim( str )
+  version:     1.0
+  trigger:     trim
+  expansion:   \$.trim(${1:str})
+  description: Remove the whitespace from the beginning and end of a string.
+  categories:
+    - Utilities
+
+- title:       jQuery.type( obj )
+  version:     1.4.3
+  trigger:     type
+  expansion:   \$.type(${1:obj})
+  description: Determine the internal JavaScript [[Class]] of an object.
+  categories:
+    - Utilities
+
+- title:       jQuery.unique( array )
+  version:     1.1.3
+  trigger:     unique
+  expansion:   \$.unique(${1:array})
+  description: Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.
+  categories:
+    - Utilities
+
+- title:       context
+  version:     1.3
+  trigger:     context
+  expansion:   context
+  description: The DOM node context originally passed to jQuery(); if none was passed then context will likely be the document.
+  categories:
+    - Internals
+    - Properties > Properties of jQuery Object Instances
+
+- title:       jQuery.error( message )
+  version:     1.4.1
+  trigger:     error
+  expansion:   \$.error(${1:message})
+  description: Takes a string and throws an exception containing it.
+  categories:
+    - Internals
+
+- title:       jquery
+  version:     1.3
+  trigger:     jquery
+  expansion:   jquery
+  description: A string containing the jQuery version number.
+  categories:
+    - Internals
+    - Properties > Properties of jQuery Object Instances
+
+- title:       pushStack( elements )
+  version:     1.0
+  trigger:     pushStack
+  expansion:   pushStack(${1:elements})
+  description: Add a collection of DOM elements onto the jQuery stack.
+  categories:
+    - Internals
+  group:
+    pushStack:
+    - pushStack( elements )
+
+- title:       pushStack( elements, name, arguments )
+  version:     1.3
+  trigger:     pushStack
+  expansion:   pushStack(${1:elements}, ${2:name}, ${3:arguments})
+  description: Add a collection of DOM elements onto the jQuery stack.
+  categories:
+    - Internals
+  group:
+    pushStack:
+    - pushStack( elements )
