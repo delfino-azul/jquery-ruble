@@ -131,7 +131,8 @@
 
 - title:       All Selector ("*")
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   *
   description: Selects all elements.
   categories:
@@ -139,7 +140,8 @@
 
 - title:       ':animated Selector'
   version:     1.2
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':animated'
   description: Select all elements that are in the progress of an animation at the time the selector is run.
   categories:
@@ -148,7 +150,8 @@
 
 - title:       Attribute Contains Prefix Selector [name|="value"]
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   [${1:name}|="${2:value}"]
   description: Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).
   categories:
@@ -156,7 +159,8 @@
 
 - title:       Attribute Contains Selector [name*="value"]
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   [${1:name}*="${2:value}"]
   description: Selects elements that have the specified attribute with a value containing the a given substring.
   categories:
@@ -164,7 +168,8 @@
 
 - title:       Attribute Contains Word Selector [name~="value"]
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   [${1:name}~="${2:value}"]
   description: Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.
   categories:
@@ -172,7 +177,8 @@
 
 - title:       Attribute Ends With Selector [name$="value"]
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   [${1:name}$="${2:value}"]
   description: Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.
   categories:
@@ -180,7 +186,8 @@
 
 - title:       Attribute Equals Selector [name="value"]
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   [${1:name}="${2:value}"]
   description: Selects elements that have the specified attribute with a value exactly equal to a certain value.
   categories:
@@ -188,7 +195,8 @@
 
 - title:       Attribute Not Equal Selector [name!="value"]
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   [${1:name}!="${2:value}"]
   description: Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value.
   categories:
@@ -197,7 +205,8 @@
 
 - title:       Attribute Starts With Selector [name^="value"]
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   [${1:name}^="${2:value}"]
   description: Selects elements that have the specified attribute with a value beginning exactly with a given string.
   categories:
@@ -205,7 +214,8 @@
 
 - title:       ':button Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':button'
   description: Selects all button elements and elements of type button.
   categories:
@@ -214,7 +224,8 @@
 
 - title:       ':checkbox Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':checkbox'
   description: Selects all elements of type checkbox.
   categories:
@@ -223,7 +234,8 @@
 
 - title:       ':checked Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':checked'
   description: Matches all elements that are checked.
   categories:
@@ -231,7 +243,8 @@
 
 - title:       Child Selector (“parent > child”)
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   ${1:parent} > ${2:child}
   description: Selects all direct child elements specified by "child" of elements specified by "parent".
   categories:
@@ -239,7 +252,8 @@
 
 - title:       Class Selector (“.class”)
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   .${1:class}
   description: Selects all elements with the given class.
   categories:
@@ -247,7 +261,8 @@
 
 - title:       ':contains() Selector'
   version:     1.1.4
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':contains(${1:text})'
   description: Select all elements that contain the specified text.
   categories:
@@ -255,7 +270,8 @@
 
 - title:       Descendant Selector (“ancestor descendant”)
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   ${1:ancestor} ${2:descendant}
   description: Selects all elements that are descendants of a given ancestor.
   categories:
@@ -263,7 +279,8 @@
 
 - title:       ':disabled Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':disabled'
   description: Selects all elements that are disabled.
   categories:
@@ -271,7 +288,8 @@
 
 - title:       ':empty Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':empty'
   description: Select all elements that have no children (including text nodes).
   categories:
@@ -279,7 +297,8 @@
 
 - title:       ':enabled Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':enabled'
   description: Selects all elements that are enabled.
   categories:
@@ -287,7 +306,8 @@
 
 - title:       ':eq() Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':eq(${1:index})'
   description: Select the element at index n within the matched set.
   categories:
@@ -296,7 +316,8 @@
 
 - title:       ':even Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':even'
   description: Selects even elements, zero-indexed. See also odd.
   categories:
@@ -305,7 +326,8 @@
 
 - title:       ':file Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':file'
   description: Selects all elements of type file.
   categories:
@@ -314,7 +336,8 @@
 
 - title:       ':first-child Selector'
   version:     1.1.4
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':first-child'
   description: Selects all elements that are the first child of their parent.
   categories:
@@ -322,7 +345,8 @@
 
 - title:       ':first Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':first'
   description: Selects the first matched element.
   categories:
@@ -331,7 +355,8 @@
 
 - title:       ':focus Selector'
   version:     1.6
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':focus'
   description: Selects element if it is currently focused.
   categories:
@@ -340,7 +365,8 @@
 
 - title:       ':gt() Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':gt(${1:index})'
   description: Select all elements at an index greater than index within the matched set.
   categories:
@@ -349,7 +375,8 @@
 
 - title:       Has Attribute Selector [name]
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   [${1:attribute}]
   description: Selects elements that have the specified attribute, with any value.
   categories:
@@ -357,7 +384,8 @@
 
 - title:       ':has() Selector'
   version:     1.1.4
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':has(${1:selector})'
   description: Selects elements which contain at least one element that matches the specified selector.
   categories:
@@ -366,7 +394,8 @@
 
 - title:       ':header Selector'
   version:     1.2
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':header'
   description: Selects all elements that are headers, like h1, h2, h3 and so on.
   categories:
@@ -375,7 +404,8 @@
 
 - title:       ':hidden Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':hidden'
   description: Selects all elements that are hidden.
   categories:
@@ -384,7 +414,8 @@
 
 - title:       ID Selector (“#id”)
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   "#${1:id}"
   description: Selects a single element with the given id attribute.
   categories:
@@ -392,7 +423,8 @@
 
 - title:       ':image Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':image'
   description: Selects all elements of type image.
   categories:
@@ -401,7 +433,8 @@
 
 - title:       ':input Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':input'
   description: Selects all input, textarea, select and button elements.
   categories:
@@ -410,7 +443,8 @@
 
 - title:       ':last-child Selector'
   version:     1.1.4
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':last-child'
   description: Selects all elements that are the last child of their parent.
   categories:
@@ -418,7 +452,8 @@
 
 - title:       ':last Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':last'
   description: Selects the last matched element.
   categories:
@@ -427,7 +462,8 @@
 
 - title:       ':lt() Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':lt(${1:index})'
   description: Select all elements at an index less than index within the matched set.
   categories:
@@ -436,7 +472,8 @@
 
 - title:       Next Adjacent Selector (“prev + next”)
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   ${1:prev} + ${2:next}
   description: Selects all next elements matching "next" that are immediately preceded by a sibling "prev".
   categories:
@@ -444,7 +481,8 @@
 
 - title:       Next Siblings Selector (“prev ~ siblings”)
   version:     1.0
-  key_binding: M3+SPACE
+  key_binding: M2+M3+SPACE
+  binding_mac: M3+M4+SPACE
   expansion:   ${1:prev} - ${2:siblings}
   description: Selects all sibling elements that follow after the "prev" element, have the same parent, and match the filtering "siblings" selector.
   categories:
@@ -452,7 +490,8 @@
 
 - title:       ':not() Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':not(${1:selector})'
   description: Selects all elements that do not match the given selector.
   categories:
@@ -460,7 +499,8 @@
 
 - title:       ':nth-child() Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':nth-child(${1:index/even/odd/equation})'
   description: Selects all elements that are the nth-child of their parent.
   categories:
@@ -468,7 +508,8 @@
 
 - title:       ':odd Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':odd'
   description: Selects odd elements, zero-indexed. See also even.
   categories:
@@ -477,7 +518,8 @@
 
 - title:       ':only-child Selector'
   version:     1.1.4
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':only-child'
   description: Selects all elements that are the only child of their parent.
   categories:
@@ -485,7 +527,8 @@
 
 - title:       ':parent Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':parent'
   description: Select all elements that are the parent of another element, including text nodes.
   categories:
@@ -494,7 +537,8 @@
 
 - title:       ':password Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':password'
   description: Selects all elements of type password.
   categories:
@@ -503,7 +547,8 @@
 
 - title:       ':radio Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':radio'
   description: Selects all elements of type radio.
   categories:
@@ -512,7 +557,8 @@
 
 - title:       ':reset Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':reset'
   description: Selects all elements of type reset.
   categories:
@@ -521,7 +567,8 @@
 
 - title:       ':selected Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':selected'
   description: Selects all elements that are selected.
   categories:
@@ -530,7 +577,8 @@
 
 - title:       ':submit Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':submit'
   description: Selects all elements of type submit.
   categories:
@@ -539,7 +587,8 @@
 
 - title:       ':text Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':text'
   description: Selects all elements of type text.
   categories:
@@ -548,7 +597,8 @@
 
 - title:       ':visible Selector'
   version:     1.0
-  key_binding: "M3+:"
+  key_binding: "M1+M3+:"
+  binding_mac: "M4+M3+:"
   expansion:   ':visible'
   description: Selects all elements that are visible.
   categories:
@@ -2535,7 +2585,8 @@
   expansion:   live(${1:events}, function(event) {${0}})
   description: Attach an event handler for all elements which match the current selector, now and in the future.
   categories:
-    - Events > Keyboard Events
+    - Deprecated
+    - Events > Event Handler Attachment
   group:
     live():
     - live( events, handler(eventObject) )
@@ -2546,7 +2597,8 @@
   expansion:   live(${1:events}, ${2:data}, function(event) {${0}})
   description: Attach an event handler for all elements which match the current selector, now and in the future.
   categories:
-    - Events > Keyboard Events
+    - Deprecated
+    - Events > Event Handler Attachment
   group:
     live():
     - live( events, handler(eventObject) )
@@ -2557,7 +2609,8 @@
   expansion:   live(${1:events-map})
   description: Attach an event handler for all elements which match the current selector, now and in the future.
   categories:
-    - Events > Keyboard Events
+    - Deprecated
+    - Events > Event Handler Attachment
   group:
     live():
     - live( events, handler(eventObject) )
@@ -4114,7 +4167,7 @@
   categories:
     - Internals
   group:
-    pushStack:
+    pushStack():
     - pushStack( elements )
 
 - title:       pushStack( elements, name, arguments )
@@ -4125,5 +4178,530 @@
   categories:
     - Internals
   group:
-    pushStack:
+    pushStack():
     - pushStack( elements )
+
+- title:       jQuery.Callbacks( flags )
+  version:     1.7
+  trigger:     Callbacks
+  expansion:   \$.Callbacks(${1:flags})
+  description: A multi-purpose callbacks list object that provides a powerful way to manage callback lists.
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.add( callbacks )
+  version:     1.7
+  trigger:     add
+  expansion:   add(${1:callbacks})
+  description: Add a callback or a collection of callbacks to a callback list.
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.disable()
+  version:     1.7
+  trigger:     disable
+  expansion:   disable()
+  description: Disable a callback list from doing anything more.
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.empty()
+  version:     1.7
+  trigger:     empty
+  expansion:   empty()
+  description: Remove all of the callbacks from a list.
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.fire( arguments )
+  version:     1.7
+  trigger:     fire
+  expansion:   fire(${1:arguments})
+  description: Call all of the callbacks with the given arguments
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.fired()
+  version:     1.7
+  trigger:     fired
+  expansion:   fired()
+  description: Determine if the callbacks have already been called at least once.
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.fireWith( [context] [, args] )
+  version:     1.7
+  trigger:     fireWith
+  expansion:   fireWith(${1:[context]}, ${2:args})
+  description: Call all callbacks in a list with the given context and arguments.
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.has( callback )
+  version:     1.7
+  trigger:     has
+  expansion:   has(${1:callback})
+  description: Determine whether a supplied callback is in a list
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.lock()
+  version:     1.7
+  trigger:     lock
+  expansion:   lock()
+  description: Lock a callback list in its current state.
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.locked()
+  version:     1.7
+  trigger:     locked
+  expansion:   locked()
+  description: Determine if the callbacks list has been locked.
+  categories:
+    - Callbacks Object
+
+- title:       callbacks.remove( callback )
+  version:     1.7
+  trigger:     remove
+  expansion:   remove(${1:callback})
+  description: Remove a callback or a collection of callbacks from a callback list.
+  categories:
+    - Callbacks Object
+
+- title:       jQuery.hasData( element )
+  version:     1.5
+  trigger:     hasData
+  expansion:   \$.hasData(${1:element})
+  description: Determine whether an element has any jQuery data associated with it.
+  categories:
+    - Data
+
+- title:       removeData( [name] )
+  version:     1.2.3
+  trigger:     removeData
+  expansion:   removeData(${1:[name]})
+  description: Remove a previously-stored piece of data.
+  categories:
+    - Data
+    - Miscellaneous > Data Storage
+  group:
+    removeData():
+    - removeData( [name] )
+
+- title:       removeData( [list] )
+  version:     1.7
+  trigger:     removeData
+  expansion:   removeData(${1:[list]})
+  description: Remove a previously-stored piece of data.
+  categories:
+    - Data
+    - Miscellaneous > Data Storage
+  group:
+    removeData():
+    - removeData( [name] )
+
+- title:       deferred.always( alwaysCallbacks [, alwaysCallbacks] )
+  version:     1.6
+  trigger:     always
+  expansion:   always(${1:alwaysCallbacks}, ${2:alwaysCallbacks})
+  description: Add handlers to be called when the Deferred object is either resolved or rejected.
+  categories:
+    - Deferred Object
+
+- title:       deferred.done( doneCallbacks [, doneCallbacks] )
+  version:     1.5
+  trigger:     done
+  expansion:   done(${1:doneCallbacks}, ${2:doneCallbacks})
+  description: Add handlers to be called when the Deferred object is resolved.
+  categories:
+    - Deferred Object
+
+- title:       deferred.fail( failCallbacks [, failCallbacks] )
+  version:     1.5
+  trigger:     fail
+  expansion:   fail(${1:failCallbacks}, ${2:failCallbacks})
+  description: Add handlers to be called when the Deferred object is rejected.
+  categories:
+    - Deferred Object
+
+- title:       deferred.isRejected()
+  version:     1.5
+  trigger:     isRejected
+  expansion:   isRejected()
+  description: Determine whether a Deferred object has been rejected.
+  categories:
+    - Deferred Object
+    - Deprecated
+
+- title:       deferred.isResolved()
+  version:     1.5
+  trigger:     isResolved
+  expansion:   isResolved()
+  description: Determine whether a Deferred object has been resolved.
+  categories:
+    - Deferred Object
+    - Deprecated
+
+- title:       deferred.notify( args )
+  version:     1.7
+  trigger:     notify
+  expansion:   notify(${1:args})
+  description: Call the progressCallbacks on a Deferred object with the given args.
+  categories:
+    - Deferred Object
+
+- title:       deferred.notifyWith( context [, args] )
+  version:     1.7
+  trigger:     notifyWith
+  expansion:   notifyWith(${1:context}, ${2:args})
+  description: Call the progressCallbacks on a Deferred object with the given context and args.
+  categories:
+    - Deferred Object
+
+- title:       deferred.pipe( [doneFilter] [, failFilter] )
+  version:     1.6
+  trigger:     pipe
+  expansion:   pipe(${1:[doneFilter]}, ${2:failFilter})
+  description: Utility method to filter and/or chain Deferreds.
+  categories:
+    - Deferred Object
+  group:
+    deferred.pipe():
+    - deferred.pipe( [doneFilter] [, failFilter] )
+
+- title:       deferred.pipe( [doneFilter] [, failFilter] [, progressFilter] )
+  version:     1.7
+  trigger:     pipe
+  expansion:   pipe(${1:[doneFilter]}, ${2:failFilter}, ${3:progressFilter})
+  description: Utility method to filter and/or chain Deferreds.
+  categories:
+    - Deferred Object
+  group:
+    deferred.pipe():
+    - deferred.pipe( [doneFilter] [, failFilter] )
+
+- title:       deferred.progress( progressCallbacks )
+  version:     1.7
+  trigger:     progress
+  expansion:   progress(${1:progressCallbacks})
+  description: Add handlers to be called when the Deferred object generates progress notifications.
+  categories:
+    - Deferred Object
+
+- title:       deferred.promise( [target] )
+  version:     1.5
+  trigger:     promise
+  expansion:   promise(${1:[target]})
+  description: Return a Deferred's Promise object.
+  categories:
+    - Deferred Object
+
+- title:       deferred.reject( args )
+  version:     1.5
+  trigger:     reject
+  expansion:   reject(${1:args})
+  description: Reject a Deferred object and call any failCallbacks with the given args.
+  categories:
+    - Deferred Object
+
+- title:       deferred.rejectWith( context [, args] )
+  version:     1.5
+  trigger:     rejectWith
+  expansion:   rejectWith(${1:context}, ${2:args})
+  description: Reject a Deferred object and call any failCallbacks with the given context and args.
+  categories:
+    - Deferred Object
+
+- title:       deferred.resolve( args )
+  version:     1.5
+  trigger:     resolve
+  expansion:   resolve(${1:args})
+  description: Resolve a Deferred object and call any doneCallbacks with the given args.
+  categories:
+    - Deferred Object
+
+- title:       deferred.resolveWith( context [, args] )
+  version:     1.5
+  trigger:     resolveWith
+  expansion:   resolveWith(${1:context}, ${2:args})
+  description: Resolve a Deferred object and call any doneCallbacks with the given context and args.
+  categories:
+    - Deferred Object
+
+- title:       deferred.state()
+  version:     1.7
+  trigger:     state
+  expansion:   state()
+  description: Determine the current state of a Deferred object.
+  categories:
+    - Deferred Object
+
+- title:       deferred.then( doneCallbacks, failCallbacks )
+  version:     1.5
+  trigger:     then
+  expansion:   then(${1:doneCallbacks}, ${2:failCallbacks})
+  description: Add handlers to be called when the Deferred object is resolved or rejected.
+  categories:
+    - Deferred Object
+  group:
+    deferred.then():
+    - deferred.then( doneCallbacks, failCallbacks )
+
+- title:       deferred.then( doneCallbacks, failCallbacks [, progressCallbacks] )
+  version:     1.7
+  trigger:     then
+  expansion:   then(${1:doneCallbacks}, ${2:failCallbacks}, ${3:progressCallbacks})
+  description: Add handlers to be called when the Deferred object is resolved or rejected.
+  categories:
+    - Deferred Object
+  group:
+    deferred.then():
+    - deferred.then( doneCallbacks, failCallbacks )
+
+- title:       promise( [type] [, target] )
+  version:     1.6
+  trigger:     promise
+  expansion:   promise(${1:[type]}, ${2:target})
+  description: Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished.
+  categories:
+    - Deferred Object
+
+- title:       data( key, value )
+  version:     1.2.3
+  trigger:     data
+  expansion:   data(${1:key}, ${2:value})
+  description: Store arbitrary data associated with the matched elements.
+  categories:
+    - Data
+    - Miscellaneous > Data Storage
+  group:
+    data():
+    - data( key, value )
+
+- title:       data( obj )
+  version:     1.4.3
+  trigger:     data
+  expansion:   data(${1:obj})
+  description: Store arbitrary data associated with the matched elements.
+  categories:
+    - Data
+    - Miscellaneous > Data Storage
+  group:
+    data():
+    - data( key, value )
+
+- title:       data( key )
+  version:     1.2.3
+  trigger:     data
+  expansion:   data(${1:key})
+  description: Returns value at named data store for the first element in the jQuery collection, as set by data(name, value).
+  categories:
+    - Data
+    - Miscellaneous > Data Storage
+  group:
+    data():
+    - data( key )
+
+- title:       data()
+  version:     1.4
+  trigger:     data
+  expansion:   data()
+  description: Returns value at named data store for the first element in the jQuery collection, as set by data(name, value).
+  categories:
+    - Data
+    - Miscellaneous > Data Storage
+  group:
+    data():
+    - data( key )
+
+- title:       get( [index] )
+  version:     1.0
+  trigger:     get
+  expansion:   get(${1:[index]})
+  description: Retrieve the DOM elements matched by the jQuery object.
+  categories:
+    - Miscellaneous > DOM Element Methods
+
+- title:       index()
+  version:     1.4
+  trigger:     index
+  expansion:   index()
+  description: Search for a given element from among the matched elements.
+  categories:
+    - Miscellaneous > DOM Element Methods
+  group:
+    index():
+    - index()
+
+- title:       index( selector )
+  version:     1.4
+  trigger:     index
+  expansion:   index(${1:selector})
+  description: Search for a given element from among the matched elements.
+  categories:
+    - Miscellaneous > DOM Element Methods
+  group:
+    index():
+    - index()
+
+- title:       index( element )
+  version:     1.0
+  trigger:     index
+  expansion:   index(${1:element})
+  description: Search for a given element from among the matched elements.
+  categories:
+    - Miscellaneous > DOM Element Methods
+  group:
+    index():
+    - index()
+
+- title:       size()
+  version:     1.0
+  trigger:     size
+  expansion:   size()
+  description: Return the number of elements in the jQuery object.
+  categories:
+    - Miscellaneous > DOM Element Methods
+
+- title:       toArray()
+  version:     1.4
+  trigger:     toArray
+  expansion:   toArray()
+  description: Retrieve all the DOM elements contained in the jQuery set, as an array.
+  categories:
+    - Miscellaneous > DOM Element Methods
+
+- title:       link( target [, settings] )
+  version:     1.4.3
+  trigger:     link
+  expansion:   link(${1:target}, ${2:settings})
+  description: Link changes to the matched elements to an object.
+  categories:
+    - Plugins > Data Link
+
+- title:       unlink( target )
+  version:     1.4.3
+  trigger:     unlink
+  expansion:   unlink(${1:target})
+  description: Remove a previously created link.
+  categories:
+    - Plugins > Data Link
+
+- title:       tmpl( [data] [, options] )
+  version:     1.4.3
+  trigger:     tmpl
+  expansion:   tmpl(${1:[data]}, ${2:options})
+  description: Take the first element in the matched set and render its content as a template, using the specified data.
+  categories:
+    - Plugins > Templates
+
+- title:       jQuery.tmpl( template [, data] [, options] )
+  version:     1.4.3
+  trigger:     tmpl
+  expansion:   \$.tmpl(${1:template}, ${2:data}, ${3:options})
+  description: Render the specified HTML content as a template, using the specified data.
+  categories:
+    - Plugins > Templates
+
+- title:       tmplItem()
+  version:     1.4.3
+  trigger:     tmplItem
+  expansion:   tmplItem()
+  description: Return the tmplItem data structure for the rendered template that the matched element is part of.
+  categories:
+    - Plugins > Templates
+
+- title:       jQuery.tmplItem( element )
+  version:     1.4.3
+  trigger:     tmplItem
+  expansion:   \$.tmplItem(${1:element})
+  description: Return the tmplItem data structure for the rendered template that the specified element is part of.
+  categories:
+    - Plugins > Templates
+
+- title:       template( [name] )
+  version:     1.4.3
+  trigger:     template
+  expansion:   template(${1:[name]})
+  description: Compile the contents of the matched element as a reusable compiled template.
+  categories:
+    - Plugins > Templates
+
+- title:       jQuery.template( name, template )
+  version:     1.4.3
+  trigger:     template
+  expansion:   \$.template(${1:name}, ${2:template})
+  description: Create a reusable named template (compiled from markup).
+  categories:
+    - Plugins > Templates
+  group:
+    jQuery.template():
+    - jQuery.template( name, template )
+
+- title:       jQuery.template( template )
+  version:     1.4.3
+  trigger:     template
+  expansion:   \$.template(${1:template})
+  description: Returns a compiled-template function.
+  categories:
+    - Plugins > Templates
+  group:
+    jQuery.template():
+    - jQuery.template( template )
+
+- title:       '${} Template Tag'
+  version:     1.4.3
+  trigger:     $
+  expansion:   \${${1:fieldNameOrExpression}}
+  description: Used for insertion of data values in the rendered template. Evaluates the specified field (property) on the current data item, or the specified JavaScript function or expression.
+  categories:
+    - Plugins > Templates > Template Tags
+
+- title:       '{{html}} Template Tag'
+  version:     1.4.3
+  trigger:     'html'
+  expansion:   '{{html ${1:fieldNameOrExpression}}}'
+  description: Used for insertion of HTML markup strings in the rendered template. Evaluates the specified field on the current data item, or the specified JavaScript function or expression.
+  categories:
+    - Plugins > Templates > Template Tags
+
+- title:       '{{if}} Template Tag'
+  version:     1.4.3
+  trigger:     'if'
+  expansion:   '{{if ${1:fieldNameOrExpression}}}${0}{{/if}}'
+  description: Used for conditional insertion of content. Renders the content between the opening and closing template tags only if the specified data item field, JavaScript function or expression does not evaluate to false (or to zero, null, type "undefined", or the empty string ).
+  categories:
+    - Plugins > Templates > Template Tags
+
+- title:       '{{else}} Template Tag'
+  version:     1.4.3
+  trigger:     'else'
+  expansion:   '{{else ${1:fieldNameOrExpression}}}${0}'
+  description: 'Used in association with the {{if}}...{{/if}} tag to provide alternative content based on the values of one or more expressions. The {{else}} tag can be used without a parameter, as in: {{if a}}...{{else}}...{{/if}}, or with a parameter, as in: {{if a}}...{{else b}}...{{/if}}.'
+  categories:
+    - Plugins > Templates > Template Tags
+
+- title:       '{{each}} Template Tag'
+  version:     1.4.3
+  trigger:     'each'
+  expansion:   '{{each(${1:index}, ${2:value}) ${3:collection}}}${0}{{/each}}'
+  description: Used to iterate over a data array, and render the content between the opening and closing template tags once for each data item.
+  categories:
+    - Plugins > Templates > Template Tags
+
+- title:       '{{tmpl}} Template Tag'
+  version:     1.4.3
+  trigger:     'tmpl'
+  expansion:   '{{tmpl(${1:[data]}, ${2:[options]}) ${3:template}}}'
+  description: Used for composition of templates. Renders one or more nested template items within the rendered output of the parent template.
+  categories:
+    - Plugins > Templates > Template Tags
+
+- title:       '{{wrap}} Template Tag'
+  version:     1.4.3
+  trigger:     'wrap'
+  expansion:   '{{wrap(${1:[data]}, ${2:[options]}) ${3:template}}}${0}{{/wrap}}'
+  description: Used for composition of templates which incorporate wrapped HTML content. Rendered template items can combine wrapped HTML content with template markup.
+  categories:
+    - Plugins > Templates > Template Tags

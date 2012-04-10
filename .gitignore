@@ -10,4 +10,4 @@
 _svn
 svn-commit*.tmp
 cache.yml
-cache.yml
+.project

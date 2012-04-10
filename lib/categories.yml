@@ -55,11 +55,13 @@ Miscellaneous:
 - Data Storage
 - DOM Element Methods
 - Setup Methods
-- Offset
+
+Offset:
 
 Plugins:
 - Data Link
-- Templates
+- Templates:
+    - Template Tags
 
 Properties:
 - Properties of jQuery Object Instances

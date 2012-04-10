@@ -51,7 +51,7 @@ class JQueryRubleUtils
   def self.get_definitions(key=nil, condition=nil)
     return @@definitions unless key
     return @@definitions.select {|definition| definition.has_key?(key)} unless condition
-    return @@definitions.select {|definition| definition.has_key?(key) && (condition=~definition[key])!=nil}
+    return @@definitions.select {|definition| definition.has_key?(key) && (definition[key].instance_of?(Array) ? (definition[key].select {|val| condition=~val.to_s}).length > 0 : condition=~definition[key].to_s)}
   end
 
   #
@@ -65,9 +65,10 @@ class JQueryRubleUtils
   # command
   #
   def self.define_command(definition, command)
-    command.key_binding = definition['key_binding'].to_s
-    command.expansion   = definition['expansion'].to_s
-    command.description = self.get_description(definition)
+    command.key_binding     = definition['key_binding'].to_s
+    command.key_binding.mac = definition['binding_mac'].to_s if definition['binding_mac']
+    command.expansion       = definition['expansion'].to_s
+    command.description     = self.get_description(definition)
 
     command.input  = :none
     command.output = :insert_as_snippet
@@ -90,7 +91,40 @@ class JQueryRubleUtils
   def self.define_snippet(definition, snippet)
     snippet.trigger     = definition['trigger'].to_s
     snippet.expansion   = definition['expansion'].to_s
+    snippet.scope       = definition['scope'].to_s if definition['scope']
     snippet.description = self.get_description(definition)
+  end
+
+  #
+  # Add command to specified menu
+  #
+  # === Arguments
+  #
+  # +menu+::
+  # Menu to add command
+  # +categories+::
+  # Categories
+  def self.add_commands(menu, categories, parent_category_name=nil)
+    if categories.instance_of?(Hash)
+      categories.each do |key, value|
+        if value
+          menu.menu key do |sub_menu|
+            self.add_commands(sub_menu, value, parent_category_name ? "#{parent_category_name} > #{key}" : key)
+            self.add_commands_by_category(sub_menu, parent_category_name ? "#{parent_category_name} > #{key}" : key)
+          end
+        else
+          self.add_commands(menu, parent_category_name ? "#{parent_category_name} > #{key}" : key)
+        end
+      end
+    elsif categories.instance_of?(Array)
+      categories.each do |value|
+        self.add_commands(menu, value, parent_category_name)
+      end
+    elsif categories.instance_of?(String)
+      menu.menu categories do |sub_menu|
+        self.add_commands_by_category(sub_menu, parent_category_name ? "#{parent_category_name} > #{categories}" : categories)
+      end
+    end
   end
 
   #
@@ -100,17 +134,10 @@ class JQueryRubleUtils
   #
   # +menu+::
   # Menu to add command
-  # +parent_category+::
-  # Parent category name as String
-  # +child_category+::
-  # Child category name as String
-  def self.add_commands(menu, parent_category, child_category=nil)
-    category = parent_category.to_s
-    if child_category
-      self.add_commands(menu, parent_category += " > #{child_category}")
-      return
-    end
-    definitions = @@definitions.select {|definition| definition.has_key?('categories') && definition['categories'].index(category)}
+  # +category_name+::
+  # Category name as String
+  def self.add_commands_by_category(menu, category_name)
+    definitions = @@definitions.select {|definition| definition.has_key?('categories') && definition['categories'].index(category_name.to_s)}
     definitions = definitions.sort{|a, b| a['title'] <=> b['title']}
     added_groups = []
     definitions.each do |definition|
